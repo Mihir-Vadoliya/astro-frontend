@@ -1,0 +1,522 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;700;800;900&family=Pacifico&display=swap');
+
+.pacifico {
+  font-family: 'Pacifico', cursive;
+}
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* font size */
+.font-50 {
+  font-size: 50px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.font-24 {
+  font-size: 24px;
+}
+
+.font-32 {
+  font-size: 32px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+.font-30 {
+  font-size: 30px;
+}
+
+.font-40 {
+  font-size: 40px;
+}
+
+/* font */
+.medium {
+  font-weight: 500;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+/* color */
+.color-061629 {
+  color: #061629;
+}
+
+/* header */
+
+.head_person_image {
+  position: relative;
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  border: 3px solid #f2f2f2;
+}
+
+.head_person_image img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* main banner */
+.main_bg {
+  background: url(../images/main_banner_bg.png) no-repeat;
+  background-size: cover;
+}
+
+/* steps */
+
+.choose_your_sign img {
+  /* max-width: 45%; */
+  margin-bottom: 5px;
+  /* margin:0 auto;
+  display: table; */
+}
+
+.choose_your_sign {
+  position: relative;
+  height: 110px;
+  width: 78px;
+  /* margin-bottom: 12px; */
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  vertical-align: middle;
+  /* margin-bottom: 20px; */
+}
+
+.choose_your_sign input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.choose_your_sign .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 78px;
+  width: 78px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+
+.choose_your_sign:hover input~.checkmark {
+  /* background-color: #1b0051; */
+  border-radius: 10px;
+  background-color: #061629;
+  box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(184, 173, 126, 0.4);
+}
+
+.choose_your_sign input:checked~.checkmark {
+  border-radius: 10px;
+  /* background-color: #061629; */
+  box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.1);
+  z-index: 0;
+  width:100%;
+}
+
+.choose_your_sign .checkmark:after {
+  content: unset;
+  position: absolute;
+  display: none;
+}
+
+.choose_your_sign input:checked~.checkmark:after {
+  display: block;
+}
+
+.choose_your_sign .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.select_box_field {
+  background-color: #f2f2f2;
+  color: #061629;
+  height: 60px;
+  padding-left: 25px;
+}
+
+.continue_btn {
+  background-color: #061629;
+  padding: 15px 30px;
+  border-radius: 10px;
+  transition: all .4s ease 0s;
+  -webkit-transition: all .4s ease 0s;
+  -moz-transition: all .4s ease 0s;
+  -o-transition: all .4s ease 0s;
+  border:0px;
+}
+
+.continue_btn:hover {
+  background-color: #f2f2f2;
+  color: #061629 !important;
+}
+
+.gender_options {
+  display: table-cell;
+  position: relative;
+  height: 70px;
+  width: 200px;
+  /* margin-bottom: 12px; */
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  vertical-align: middle;
+  /* margin-bottom: 20px; */
+  /* border: 1px solid #b2b2b2; */
+  border-radius: 10px;
+  /* opacity: 0.5; */
+}
+
+.gender_options input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+
+}
+
+.gender_options:hover {
+  opacity: 1;
+}
+
+.gender_options:hover span {
+  color: #061629;
+  opacity: 1;
+}
+
+.gender_options .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 200px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+  /* opacity: 0.5; */
+}
+
+.gender_options:hover input~.checkmark {
+  /* background-color: #1b0051; */
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.1);
+  /* opacity: 1; */
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+}
+
+.gender_options input:checked~.checkmark {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.1);
+  z-index: 0;
+  /* opacity: 1; */
+  border-color: #f2f2f2;
+  border-width: 2px;
+}
+
+.gender_options .checkmark:after {
+  content: unset;
+  position: absolute;
+  display: none;
+}
+
+.gender_options input:checked~.checkmark:after {
+  display: block;
+}
+
+.gender_options .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  border-color: #f2f2f2;
+}
+
+.first_name_field {
+  height: 60px;
+  background-color: #f2f2f2;
+  width: 100%;
+  border: 0px;
+  padding-left: 25px;
+  border-radius: 10px;
+}
+
+.py-200 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.fix_testimonial_image {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.fix_testimonial_image img {
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  object-fit: cover;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.our_testimonial {
+  background: #061629;
+  /* margin-top: 130px; */
+}
+
+.footer {
+  background: #f2f2f2;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 4%;
+}
+
+.modal_content_styl p {
+  font-size: 14px;
+}
+
+.modal_content_styl h4 {
+  font-size: 20px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+summary::marker {
+  content: '-';
+  font-size: 1.2em;
+  font-weight: 700;
+  background-color: #061629;
+  color: #061629;
+}
+
+.footer a:hover {
+  color: #061629;
+}
+
+.term_popup h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #061629;
+}
+
+.main_banner {
+  background: #f2f2f209;
+  padding-top: 80px;
+  padding-bottom: 120px;
+  background: url(../images/steps-bg-1.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.our_testimonial {
+  background: #061629 url(../images/steps-bg.png);
+}
+
+.our_testimonial .carousel-indicators {
+  margin-bottom: -2rem;
+}
+
+.our_testimonial .carousel-indicators {
+  margin-bottom: -2rem;
+}
+
+.our_testimonial .carousel-indicators [data-bs-target] {
+  width: 20px;
+  height: 5px;
+}
+
+.gender_options span {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.contact_us_section {
+  background: #f2f2f2;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.select_box_field_1 {
+  height: 50px;
+  padding-left: 30px;
+  background-color: transparent;
+}
+
+.cnt_input_field {
+  background: transparent;
+  height: 50px;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+textarea.cnt_input_field {
+  height: auto;
+}
+
+.send_button {
+  background: #061629;
+  border-radius: 10px;
+  padding: 10px 40px;
+  border: 2px solid transparent;
+  transition: all .4s ease 0s;
+  -webkit-transition: all .4s ease 0s;
+  -moz-transition: all .4s ease 0s;
+  -o-transition: all .4s ease 0s;
+  border: 2px solid transparent;
+}
+
+.cnt_input_field::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #49535e;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cnt_input_field::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #49535e;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cnt_input_field:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #49535e;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cnt_input_field:-moz-placeholder {
+  /* Firefox 18- */
+  color: #49535e;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.first_name_field::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #49535e;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.first_name_field::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #49535e;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.first_name_field:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #49535e;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.first_name_field:-moz-placeholder {
+  /* Firefox 18- */
+  color: #49535e;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+select.select_box_field_1, select.select_box_field_1 option,.select_box_field option ,
+.select_box_field{
+  color: #49535e;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.send_button:hover {
+  background: transparent;
+  color: #061629 !important;
+  border-color: #061629;
+}
+.modal_content_styl p{font-size: 16px;font-family: 'Montserrat', sans-serif;}
+#privacy_policy .modal-title,#terms .modal-title{font-size: 30px;font-weight: 700;}
+summary{display: inline-flex;}
+summary:before{
+  content: "+";
+  background-color: transparent;
+  border-color: black;
+  border-style: solid;
+  border: 0px;
+}
+
+/* for responsive */
+@media screen and (max-width: 1399px){
+  .choose_your_sign .checkmark,.choose_your_sign{height: 70px;width: 70px;}
+  .gender_options .checkmark,.gender_options{width: 170px;}
+}
+@media screen and (max-width: 991px){
+  .font-50{font-size: 38px;}
+  .head_person_image{height: 80px;width: 80px;}
+}
+@media screen and (max-width: 768px){
+  .head_person_image{display: table;height: 80px;width: 80px;}
+  .font-50{font-size: 30px;}
+  .font-40{font-size: 24px;}
+  .choose_your_sign .checkmark{background: transparent;width: 55px;border:0px;height: 98px;}
+  .choose_your_sign{width: 55px;height: 98px;}
+  .choose_your_sign:hover input ~ .checkmark{background-color: transparent;}
+  .choose_your_sign:hover input ~ .checkmark{border-color: transparent;}
+  .gender_options,.gender_options .checkmark{width: 180px;}
+  .choose_your_sign span{font-size: 12px;}
+  .main_banner{padding-top: 20px;padding-bottom: 30px;}
+  .font-24{font-size: 18px;}
+  .gender_options, .gender_options .checkmark{width: 120px;height: 70px;}
+  .gender_options span{font-size: 18px;}
+  .select_box_field{padding-left: 15px;}
+  .choose_your_sign img{width: 72px!important;}
+  .choose_your_sign{width: 100%;
+    height: 127px;}
+    .font-20{font-size: 16px;}
+}

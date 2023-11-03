@@ -1,0 +1,15 @@
+{
+    "languages": ["nl"],
+    "offer_id": 1094,
+    "lander_id": 1094,
+    "tracker": "binom",
+    "countries": ["NL"],
+    "astrologist": "Christin",
+    "design_id": 285643,
+    "gtmContainerId": "GTM-PRT5RHT",
+    "domains": [
+        "127.0.0.1:8000",
+        "dev.lydia-astro.com",
+        "nl.function-tool.com"
+    ]
+}

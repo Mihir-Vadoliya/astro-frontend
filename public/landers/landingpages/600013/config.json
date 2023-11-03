@@ -1,0 +1,11 @@
+{
+    "languages": ["de"],
+    "offer_id": 865,
+    "lander_id": 865,
+    "tracker": "binom",
+    "countries": ["DE"],
+    "astrologist": "padre",
+    "design_id": 600013,
+    "gtmContainerId": "GTM-PBRR4L2",
+    "domains": ["lp.astrology-prism.com","dev.lydia-astro.com", "127.0.0.1:8000"]
+}

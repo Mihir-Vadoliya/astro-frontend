@@ -1,0 +1,18 @@
+{
+    "languages": ["es"],
+    "offer_id": 938,
+    "lander_id": 938,
+    "tracker": "binom",
+    "countries": ["AR"],
+    "astrologist": "Miguel Angelo",
+    "gtmContainerId": "GTM-NMLWT7W",
+    "domains": [
+        "frontend.lydia-astro.com",
+        "front_lydia.adpeako.local",
+        "seconddomain.com",
+        "ar.starsandthemoon-2020.com",
+        "astro_frontend.test",
+        "dev.lydia-astro.com",
+        "127.0.0.1:8000"
+    ]
+}

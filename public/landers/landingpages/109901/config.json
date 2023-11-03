@@ -1,0 +1,18 @@
+{
+    "languages": ["pt"],
+    "offer_id": 939,
+    "lander_id": 939,
+    "tracker": "binom",
+    "countries": ["PT"],
+    "astrologist": "Christin",
+    "gtmContainerId": "GTM-NMLWT7W",
+    "domains": [
+        "frontend.lydia-astro.com",
+        "front_lydia.adpeako.local",
+        "seconddomain.com",
+        "pt.starsandthemoon-2020.com",
+        "astro_frontend.test",
+        "dev.lydia-astro.com",
+        "127.0.0.1:8000"
+    ]
+}

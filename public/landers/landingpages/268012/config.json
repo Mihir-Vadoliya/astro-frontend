@@ -1,0 +1,15 @@
+{
+    "languages": ["fr"],
+    "offer_id": 1069,
+    "lander_id": 1069,
+    "tracker": "binom",
+    "countries": ["FR"],
+    "astrologist": "Christin",
+    "design_id": 268012,
+    "gtmContainerId": "GTM-WLVK5X7",
+    "domains": [
+        "astro.astrology-lotus.com",
+        "dev.lydia-astro.com",
+        "127.0.0.1:8000"
+    ]
+}

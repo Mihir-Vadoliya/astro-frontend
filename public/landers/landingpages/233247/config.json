@@ -1,0 +1,12 @@
+{
+    "languages": ["en"],
+    "countries": ["au"],
+    "tracker": "binom",
+    "design_id": 233247,
+    "gtmContainerId": "GTM-K6ZM72M",
+    "domains": [
+        "lp.all-universe.com",
+        "dev.lydia-astro.com",
+        "127.0.0.1:8000"
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "languages": ["pt"],
+    "offer_id": 957,
+    "lander_id": 957,
+    "tracker": "binom",
+    "countries": ["BR"],
+    "astrologist": "Agatha",
+    "design_id": 252420,
+    "gtmContainerId": "GTM-WHQ2J6P",
+    "domains": [
+        "moon-pion.com",
+        "lp.moon-pion.com",
+        "dev.lydia-astro.com",
+        "127.0.0.1:8000"
+    ]
+}

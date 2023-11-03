@@ -1,0 +1,1547 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+a, button {
+    transition: all .4s ease 0s;
+    -webkit-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+}
+
+/* fonts */
+@font-face {
+    font-family: 'swis721_btroman';
+    src: url('fonts/swiss_721_bt-webfont.woff2') format('woff2'),
+        url('fonts/swiss_721_bt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'swis721_blkcn_btblack';
+    src: url('fonts/swiss_721_black_condensed_bt-webfont.woff2') format('woff2'),
+        url('fonts/swiss_721_black_condensed_bt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'poetsenoneregular';
+    src: url('fonts/poetsenone-regular-webfont.woff2') format('woff2'),
+         url('fonts/poetsenone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.poetsenoneregular{font-family: 'poetsenoneregular';}
+.inter{font-family: 'Inter', sans-serif;}
+.josefin{font-family: 'Josefin Sans', sans-serif;}
+.josefinslab{font-family: 'Josefin Slab', serif;}
+.swis721_blkcn_btblack {
+    font-family: 'swis721_blkcn_btblack';
+}
+
+.swiss_font {
+    font-family: 'swis721_btroman';
+}
+
+.step_10 li {
+    position: relative;
+    text-align: left;
+    padding-left: 12px;
+}
+.step_10 li:before{
+    position: absolute;
+    content: '';
+    top:50%;
+    left:0;
+    transform:translate(-50%, -50%);
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+}
+.step_10 .top-0:before{
+    top: 27% !important;
+}
+.step_10 ul{
+    margin-left: 330px;
+}
+.configProductName{
+    font-family: cursive;
+}
+.m-20{
+    margin-top: 20px;
+}
+.p-10{
+    padding: 10px;
+}
+.p-5{
+    padding: 5px;
+}
+.brandImg{
+    width: 200px;
+}
+.d-flex{
+    display: flex;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.extrabold {
+    font-weight: 800;
+}
+
+.font-black {
+    font-weight: 900;
+}
+
+.medium {
+    font-weight: 500;
+}
+.semi {
+    font-weight: 600;
+}
+
+.font16 {
+    font-size: 16px;
+}
+
+.font76 {
+    font-size: 76px;
+}
+.font-70 {
+    font-size: 70px;
+}
+
+.font36 {
+    font-size: 36px;
+}
+
+.font56 {
+    font-size: 58px;
+}
+
+.font14 {
+    font-size: 14px;
+}
+
+.font13 {
+    font-size: 13px;
+}
+
+.font52 {
+    font-size: 34px;
+}
+
+.color-c8c8c8 {
+    color: #c8c8c8;
+}
+
+.color-ed8a89 {
+    color: #ed8a89;
+}
+
+.color-646464 {
+    color: #646464;
+}
+
+.font18 {
+    font-size: 18px;
+}
+
+.font24 {
+    font-size: 24px;
+}
+
+.font22 {
+    font-size: 22px;
+}
+
+.font20 {
+    font-size: 20px;
+}
+
+.line-height-28 {
+    line-height: 28px;
+}
+
+.line-height-24 {
+    line-height: 24px;
+}
+
+.min-height-173 {
+    min-height: 173px;
+}
+
+.min-height-116 {
+    min-height: 142px;
+}
+
+.line-height-46 {
+    line-height: 46px;
+}
+
+.line-height-36 {
+    line-height: 36px;
+}
+
+.line-height-34 {
+    line-height: 34px;
+}
+
+.line-height-30 {
+    line-height: 30px;
+}
+
+.py-80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.color-824456 {
+    color: #fff
+}
+
+.color-969696 {
+    color: #969696;
+}
+
+.letter-space-1 {
+    letter-spacing: 1px;
+}
+
+.letter-space-5 {
+    letter-spacing: 4px;
+}
+.text-justify{text-align: justify;}
+/* banner image */
+.main_banner {
+    background: url(../images/banner_image.jpg) no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+    padding-bottom: 90px;
+    background-position: center center;
+}
+.main_bg{background-image: url(../images/Zodiac_Sign_bg.webp    );background-repeat: no-repeat;background-size: cover;}
+
+.astro_btn {
+    background-color: #f4e7d8;
+    width: auto;
+    height: 60px;
+    line-height: 55px;
+    border-radius: 60px;
+    border: 2px solid transparent;
+    transition: all .4s ease 0s;
+    -webkit-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    padding: 0 27px;
+}
+
+.astro_btn:hover {
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+
+.cnt_menu_link {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+
+/* abt us */
+.abt_us {
+    background-color: #824456;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* products */
+.our_products {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #ed8a89;
+}
+
+.product_price_btn {
+    background-color: #f4e7d8;
+    width: 100px;
+    height: 50px;
+    line-height: 48px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+}
+
+.product_price_btn:hover {
+    background-color: transparent;
+    border-color: #f4e7d8;
+    color: #f4e7d8;
+}
+
+/* features */
+.features {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.personal-date {
+    margin: 55px 0 40px;
+    text-align: center;
+}
+.personal-date, .date_text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    margin-top: 30px;
+    color: white;
+}
+ .slider_info img {
+    width: 100px;
+    margin: 0 auto;
+}
+.slider {
+    overflow: hidden;
+}
+
+.slider_slick {
+    margin-bottom: 20px;
+}
+
+.slider_info-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #fbd0f5;
+    margin: 10px auto;
+}
+
+.slider_info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.slick-dots li button:before {
+    font-size: 60px!important;
+    color: white!important;
+    opacity: 1!important;
+}
+
+.slider_title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.slider_text {
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    margin: 20px auto 0;
+    padding: 0 20px;
+    max-width: 450px;
+}
+.secrets-title{font-size: 36px;
+     font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    margin: 100px 0 30px;
+    text-align: center;}
+    .personal-date {
+    margin: 55px 0 40px;
+    text-align: center;
+}
+.slider .slick-dots li.slick-active button:before{color: #e54cc0!important;}
+.slick-dots li.slick-active button:before{opacity: 1;}
+
+/* testimonial */
+.testimonial {
+
+    padding-bottom: 100px;
+    background-color: transparent;
+}
+
+.testimonial .carousel-indicators [data-bs-target] {
+    height: 11px;
+    width: 11px;
+    border-radius: 100%;
+    background-color: #c3b9ad;
+    opacity: 1;
+}
+
+.testimonial .carousel-indicators .active {
+    background-color: #000;
+}
+
+.testimonial .carousel-indicators {
+    bottom: -100px;
+}
+
+/* faq */
+.faq {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.faq .accordion-button::after {
+    background-image: url(../images/faq-down-arrow.jpg);
+}
+
+.faq .accordion-button:not(.collapsed) {
+    box-shadow: unset;
+    background-color: unset;
+}
+
+.border-bottom-1 {
+    border: 0px;
+    border-bottom: 2px solid #bc9ba5;
+}
+
+.faq .accordion-button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.faq .accordion-button:focus {
+    box-shadow: unset;
+}
+
+/* know horoscope */
+.knw_horscope_section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background: url(../images/know-your-horscope-bg-image.jpg) no-repeat;
+    background-size: cover;
+}
+
+/* contact us */
+.contact_us {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* footer */
+.footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.born_input_field::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
+}
+.born_input_field:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
+}
+.born_input_field::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+}
+.born_input_field:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fff;
+}
+.born_input_field::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #fff;
+}
+
+.born_input_field::placeholder { /* Most modern browsers support this now. */
+   color:    #fff;
+}
+/* for steps */
+.steps_page_banner {
+    /* background-color: #ed8a89; */
+    /*background: url(../images/banner_image.jpg);*/
+    padding: 30px 0px;
+}
+
+.steps_logo {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.py-60 {
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+/*  radio button */
+.choose_zodiac_btn img {
+    max-width: 52%;
+    margin-bottom: 5px;
+}
+.modal-backdrop{background-color: #00000097;}
+.btn-close {
+    font-size: 25px;
+}
+.choose_zodiac_btn {
+    display: table-cell;
+    position: relative;
+    height: 170px;
+    width: 170px;
+    /* margin-bottom: 12px; */
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    vertical-align: middle;
+    /* margin-bottom: 20px; */
+}
+
+.choose_zodiac_btn input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.choose_zodiac_btn .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 170px;
+    width: 170px;
+    background-color: transparent;
+
+}
+
+.choose_zodiac_btn:hover input~.checkmark {
+    /* background-color: #1b0051; */
+    border-radius: 10px;
+    background-color: rgb(255 255 255 / 7%);
+    box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.1);
+    border: 1px solid #fff;
+}
+
+.choose_zodiac_btn input:checked~.checkmark {
+    border-radius: 10px;
+    background-color: rgb(255 255 255 / 7%);
+    box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.1);
+    border: 1px solid #fff;
+    z-index: 0;
+}
+
+.choose_zodiac_btn .checkmark:after {
+    content: unset;
+    position: absolute;
+    display: none;
+}
+
+.choose_zodiac_btn input:checked~.checkmark:after {
+    display: block;
+}
+
+.choose_zodiac_btn .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+.mb-30 {
+    margin-bottom: 10px;
+}
+
+.mb-25 {
+    margin-bottom: 25px;
+}
+
+.per_image img {
+    max-width: 82%;
+}
+
+.color-807067 {
+    color: #807067;
+}
+
+.step_page_testimonial .testi_per_image {
+    position: relative;
+    height: 120px;
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.step_page_testimonial .testi_per_image img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    content: '';
+}
+
+.testimonial.step_page_testimonial .carousel-indicators [data-bs-target] {
+    height: 11px;
+    width: 11px;
+    border-radius: 100%;
+    background-color: #ddc6be;
+    opacity: 1;
+}
+
+.testimonial.step_page_testimonial .carousel-indicators .active {
+    background-color: #824456;
+}
+
+.testimonial.step_page_testimonial .carousel-indicators {
+    bottom: -50px;
+}
+
+.testimonial.step_page_testimonial {
+    padding-top: 50px;
+    padding-bottom: 90px;
+}
+
+.font32 {
+    font-size: 32px;
+}
+
+.select_gender {
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+.lh-70{line-height: 70px;}
+
+/* gender */
+.choose_gender_btn {
+    display: table-cell;
+    position: relative;
+    height: 300px;
+    width: 246px;
+    /* margin-bottom: 12px; */
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    /*vertical-align: middle;*/
+    /* margin-bottom: 20px; */
+     border: 2px solid #fff;
+    border-radius: 10px;
+    /* opacity: 0.5; */
+    background-color: rgb(255 255 255 / 40%);
+    border-radius: 12px;
+    padding-top: 60px;
+    backdrop-filter: blur(11.7467px);
+
+}
+
+.choose_gender_btn input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+}
+
+
+.choose_gender_btn:hover {
+    opacity: 1;
+}
+
+.choose_gender_btn:hover span {
+    color: #000;
+    opacity: 1;
+}
+
+.choose_gender_btn .checkmark {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 0px 0px 12px 12px;
+   /* background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    border: 1px solid #b2b2b2;
+    border-radius: 10px;*/
+    /*opacity: 0.5;*/
+    padding-top: 18px;
+    padding-bottom: 16px;
+}
+
+.choose_gender_btn:hover input~.checkmark {
+    /* background-color: #1b0051; */
+    /*border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.1);*/
+    opacity: 1;
+}
+
+.choose_gender_btn input:checked~.checkmark {
+    /*border-radius: 10px;*/
+    /*background-color: rgb(255 255 255 / 40%);
+    box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.1);*/
+    z-index: 0;
+    opacity: 1;
+    /*border-color: #000;
+    border-width: 2px;*/
+}
+
+.choose_gender_btn .checkmark:after {
+    content: unset;
+    position: absolute;
+    display: none;
+}
+
+.choose_gender_btn input:checked~.checkmark:after {
+    display: block;
+}
+
+.choose_gender_btn .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    border-color: red;
+}
+
+.bck_btn {
+    width: 200px;
+    height: 60px;
+    border: 1px solid #d0d0d0;
+    border-radius: 60px;
+    line-height: 60px;
+}
+
+.bck_btn:hover {
+    background-color: #ed8a89;
+    color: #fff !important;
+}
+
+.continue_btn {
+    width: 370px;
+    height: 70px;
+    background: linear-gradient(18deg, #FFA0D8 13.61%, #E92D9C 87.58%), #FFFFFF;
+    border-radius: 25px;
+    line-height: 70px;
+    /*border: 1px solid transparent;*/
+    color: #fff;
+    font-size: 30px;
+    /*transition: all .4s;*/
+}
+
+.continue_btn:hover {
+    background: linear-gradient(200deg, #FFA0D8 13.61%, #E92D9C 87.58%), #FFFFFF;
+    color: #fff !important;
+}
+.font-60{font-size: 60px;}
+.font-50{font-size: 50px;}
+.compatible_div{position: relative;z-index: 1;padding: 30px 100px;}
+.compatible_div:before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #4A4F8E;
+opacity:0.5 ;
+z-index: -1;
+
+backdrop-filter: blur(30px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 27px;}
+#step_9 .continue_btn{height: auto;padding: 15px 100px;line-height: 40px;border-radius: 30px;}
+.pt-50 {
+    padding-top: 55px;
+}
+
+.pt-100 {
+    padding-top: 90px;
+}
+
+.born_input_field {
+    background: rgba(255, 255, 255, 0.4);
+    border: 1.17467px solid #FFFFFF;
+    backdrop-filter: blur(11.7467px);
+    height: 79px;
+    width: 100%;
+    border-radius: 11px;
+    padding-left: 30px;
+}
+#step_6 .form-select{background-image: none;}
+#step_6 .born_input_field, #step_8 .born_input_field{padding-left: 0px;padding-right: 0px;}
+.bg_gradient{
+    background: linear-gradient(44.83deg, #FFA0D8 13.61%, #E92D9C 87.58%), #FFFFFF;
+    border-radius: 20px;
+    padding: 20px 50px;
+}
+.check_div{
+    width: 78%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(11.7467px);
+    border-radius: 11.7467px;
+    border: 1.17467px solid #FFFFFF;
+    padding: 46px 130px;
+}
+.form-check-input{
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px!important;
+    width: 45px;
+    height: 46px;
+    padding-right: 30px;
+}
+.form-check-label{padding-left: 21px;}
+.form-check{    padding-left: 3.5em;}
+.form-check .form-check-input{margin-left: -3.5em;}
+.free_button{z-index: 1;
+    top: -34px;
+    left: 24px;
+}
+.free_gift_div{margin-top: 74px;}
+
+.yes_btn {
+    width: 246px;
+    height: 70px;
+    line-height: 65px;
+    border-radius: 10px;
+    border: 1px solid #a8a8a8;
+    background-color: transparent;
+}
+
+
+.yes_btn:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.14);
+    border: 1px solid transparent;
+}
+
+.menu_links ul li a:hover {
+    color: #f4e7d8;
+}
+.form-select:focus{box-shadow: unset;border-color: #fff;}
+.form-select{background-image: url(../images/formselectVector.png);background-repeat: no-repeat;
+background-position: right 25px center;
+    background-size: 16px 12px;}
+    .born_input_field option{color: #000;}
+    .pt-83{padding-top: 83px;}
+
+/* concerns */
+.mb-10{margin-bottom: 36px;}
+.choose_concerns_btn {
+    display: table-cell;
+    position: relative;
+    height: 80px;
+    width: 300px;
+    /* margin-bottom: 12px; */
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    vertical-align: middle;
+    /* margin-bottom: 20px; */
+    /* border: 1px solid #b2b2b2; */
+    border-radius: 10px;
+    /* opacity: 0.5; */
+}
+
+.choose_concerns_btn input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+}
+
+
+.choose_concerns_btn:hover {
+    opacity: 1;
+}
+
+.choose_concerns_btn:hover span {
+    color: #000;
+    opacity: 1;
+}
+
+.choose_concerns_btn .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 11px;
+    border: 1.17467px solid #FFFFFF;
+    backdrop-filter: blur(11.7467px);
+}
+
+.choose_concerns_btn:hover input~.checkmark {
+    /* background-color: #1b0051; */
+    border-radius: 11px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+}
+
+.choose_concerns_btn input:checked~.checkmark {
+    border-radius: 11px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+    opacity: 1;
+
+}
+
+.choose_concerns_btn .checkmark:after {
+    content: unset;
+    position: absolute;
+    display: none;
+}
+
+.choose_concerns_btn input:checked~.checkmark:after {
+    display: block;
+}
+
+.choose_concerns_btn .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+
+}
+
+
+/* yes no  */
+/* gender */
+.choose_yesno_btn {
+    display: table-cell;
+    position: relative;
+    height: 80px;
+    width: 300px;
+    /* margin-bottom: 12px; */
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    vertical-align: middle;
+    /* margin-bottom: 20px; */
+    /* border: 1px solid #b2b2b2; */
+    border-radius: 10px;
+    /* opacity: 0.5; */
+}
+
+.choose_yesno_btn input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+}
+
+
+.choose_yesno_btn:hover {
+    opacity: 1;
+}
+
+.choose_yesno_btn:hover span {
+    color: #000;
+    opacity: 1;
+}
+
+.choose_yesno_btn .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 11px;
+    border: 1.17467px solid #FFFFFF;
+    backdrop-filter: blur(11.7467px);
+}
+
+.choose_yesno_btn:hover input~.checkmark {
+    /* background-color: #1b0051; */
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 11px;
+    border: 1.17467px solid #FFFFFF;
+    box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+}
+
+.choose_yesno_btn input:checked~.checkmark {
+    border-radius: 11px;
+   background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+    opacity: 1;
+    border: 1.17467px solid #FFFFFF;
+}
+
+.choose_yesno_btn .checkmark:after {
+    content: unset;
+    position: absolute;
+    display: none;
+}
+
+.choose_yesno_btn input:checked~.checkmark:after {
+    display: block;
+}
+
+.choose_yesno_btn .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    border-color: red;
+}
+.complete_btn{padding: 20px 50px;border-radius: 60px;background-color: #ed8a89;}
+.bg-text-new{background-color: #824456;padding: 35px 25px;}
+.cnt_field_style{background-color: transparent;
+    border: 1px solid #ddd;
+    height: 55px;
+    width: 100%;
+    border-radius: 8px;
+    padding-left: 30px;}
+textarea.cnt_field_style{padding-top: 20px;height: auto;}
+.send_btn{
+    width: 200px;
+    height: 60px;
+    background-color: #ed8a89;
+    border-radius: 60px;
+    line-height: 54px;
+    border: 1px solid transparent;
+}
+.send_btn:hover{background-color:transparent;border-color: #ed8a89;color: #ed8a89 !important;}
+.border-2-e2e2e2{border: 3px solid #e2e2e2;border-radius: 15px;}
+.border-1-e2e2e2{border:1px solid #e2e2e2;border-radius: 15px;}
+.disclaimer_section{background-color: #f4e7d8;padding-top: 100px;padding-bottom: 100px;}
+.innerpage_banner  .astro_btn.font24{font-size: 18px;}
+.our_clairvoyants{padding-top: 100px;padding-bottom: 100px;background-color: #824456;}
+
+.lft_img{position: relative;height: 200px;width: 200px;}
+.lft_img img{border-radius: 100%;height: 100%;width: 100%;object-fit: cover;position:absolute;left: 0px;top: 0px;}
+.inbox-step-1{background-color: #824456;padding: 12px 25px;}
+.semibold{font-weight: 600;}
+
+.choose_zodiac .select_sign{
+    background: rgba(255, 255, 255, 0.4);
+    border: 2.34935px solid #FFFFFF;
+    backdrop-filter: blur(11.7467px);
+    border-radius: 12.0584px;
+    text-align: center;
+    padding: 30px 33px 90px;
+    position: relative;
+    width: 176px;
+    height: 234px;
+}
+.choose_zodiac .select_sign .sign_dropdown_div{
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(11.7467px);
+    border-radius: 0px 0px 12.0584px 12.0584px;
+    padding: 15px 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/*choose sign model*/
+.modal-header{border-bottom: none;}
+.choose_sign_model .modal-content{
+    background-color: #332163 !important;
+    border: 2.34935px solid #FFFFFF;
+    border-radius: 12.0584px;
+}
+.mt-100{margin-top: 70px;}
+.choose_sign_model .modal-body{padding-bottom: 50px;}
+.select_sign .main_sign{max-width: 82%;}
+
+.error {
+    text-align: center;
+    color: red;
+    padding-top: 10px;
+}
+.footer li a{
+    font-size: 16px;
+}
+
+/* for responsive */
+@media screen and (min-width: 1670px) {
+    #step_1 .pt-50 {
+    padding-top: 75px;
+}
+
+}
+@media (min-width: 1399px){
+        .choose_sign_model .modal-lg {
+            max-width: 1000px;
+        }
+}
+@media screen and (max-width: 1699px) {
+    .font24 {
+    font-size: 18px;
+}
+    .font52{font-size: 30px;}
+    .steps_page_banner{padding: 25px 0px;}
+    .per_image img{max-width: 72%;}
+    .mb-25{margin-bottom: 15px;}
+    .font36{font-size: 30px;}
+    .choose_zodiac_btn .checkmark,.choose_zodiac_btn{height: 135px;width: 135px;}
+    .choose_zodiac_btn .font20{font-size: 16px;}
+    .choose_zodiac_btn.font16{font-size: 14px;}
+    .py-60{padding-top: 0px;}
+    .choose_zodiac_btn .checkmark, .choose_zodiac_btn{height: 145px;}
+}
+@media screen and (max-width: 1610px){
+    .main_bg{background-position: left 12% top;}
+    .select_gender{padding-top: 0px;padding-bottom: 30px;}
+    .pt-83 {padding-top: 60px;}
+    .per_image2 img{max-width: 50%;}
+    .font56 {font-size: 50px;}
+    .lh-70 {line-height: 62px;}
+    .bg_gradient{padding: 14px 36px;}
+    .font18 {font-size: 16px;}
+    .check_div{width: 68%;padding: 36px 103px 30px;}
+    .form-check-label.font20 {font-size: 18px;}
+    .form-check-label {padding-left: 12px;}
+    .form-check-input{width: 40px;height: 41px;}
+    .free_button{top: -27px;}
+    .free_gift_div {margin-top: 60px;}
+    .step_9_next.continue_btn{font-size: 25px;}
+    #step_9 .continue_btn{line-height: 34px;}
+    .compatible_div ul li img{max-width: 80%;}
+    .font-60 {font-size: 45px;}
+    .font-50 {font-size: 40px;}
+    .mt-100 {margin-top: 40px;}
+}
+@media screen and (max-width: 1399px) {
+    .com_text .font24 {
+    font-size: 18px;
+}
+    .select_sign .main_sign{max-width: 74%;}
+    .choose_zodiac .select_sign{height: 213px;}
+    .sign_dropdown_div img{max-width: 20%;}
+    .choose_zodiac .select_sign{padding: 30px 22px 90px;width: 160px;}
+    .mt-100 {margin-top: 30px;}
+    .compatible_div ul li img {max-width: 65%;}
+    .font24 {font-size: 20px;}
+    .pt-50 {padding-top: 30px;}
+    .pt-83 {padding-top: 63px;}
+    .per_image2 img{max-width: 52%;}
+    .min-height-173 {
+        min-height: 195px;
+    }
+    .continue_btn{width: 350px;height: 60px;line-height: 63px;font-size: 26px;}
+    .select_gender {
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+.lh-70 {
+    line-height: 50px;
+}
+
+    .min-height-116 {
+        min-height: 139px;
+    }
+
+    .font56 {
+        font-size: 42px;
+    }
+    .font-70 {
+    font-size: 60px;
+}
+.choose_gender_btn img{    max-width: 29%;}
+.choose_gender_btn{height: 250px;padding-top: 50px;}
+.choose_gender_btn .checkmark{padding-top: 14px;padding-bottom: 12px;}
+
+    .per_image img {
+        max-width: 70%;
+    }
+
+    .font52 {
+        font-size: 26px;
+    }
+
+    .mb-25 {
+        margin-bottom: 15px;
+    }
+
+    .font36 {
+        font-size: 26px;
+    }
+
+    .steps_page_banner {
+        padding: 15px 0;
+    }
+
+    .steps_logo {
+        top: 45px;
+        right: 8px;
+    }
+
+    .steps_logo img {
+        max-width: 66%;
+    }
+
+    .choose_zodiac_btn .checkmark, .choose_zodiac_btn {
+        height: 135px;
+        width: 125px;
+    }
+
+    .choose_zodiac_btn img {
+        max-width: 47%;
+    }
+
+    .font20 {
+        font-size: 18px;
+    }
+
+    .font16 {
+        font-size: 14px;
+    }
+
+    .py-60 {
+        padding-top: 0px;
+    }
+    .choose_zodiac_btn .font20{font-size: 14px;}
+    .choose_zodiac_btn.font16{font-size: 12px;}
+    #step_9{padding-top: 30px;}
+    #step_9 .born_input_field{height: 70px;}
+    .check_div {width: 60%;padding: 36px 70px 30px;}
+    .form-check-label.font20 {font-size: 16px;}
+    .form-check-label {padding-left: 0px;}
+    .form-check-input {width: 36px;height: 37px;}
+    .font-60 {font-size: 38px;}
+    .font-50 {font-size: 32px;}
+
+}
+
+@media screen and (max-width: 1024px) {
+    .font76 {
+        font-size: 55px;
+    }
+
+    .font36 {
+        font-size: 30px;
+    }
+
+    .font24 {
+        font-size: 20px;
+    }
+
+    .horscope_image img {
+        width: 100%;
+    }
+
+    .font56 {
+        font-size: 48px;
+    }
+
+    .font22 {
+        font-size: 20px;
+    }
+
+    .abt_us, .our_products, .features, .testimonial, .faq, .contact_us {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .testimonial .carousel-indicators {
+        bottom: -63px;
+    }
+
+    .yes_btn {
+        width: 190px;
+        height: 60px;
+        line-height: 56px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer li a{
+        font-size: 9px;
+    }
+    .step_10 ul{
+    margin-left: 10px;
+}
+    .brandImg {
+        width: 120px;
+    }
+    .personal-date{margin: 0px;}
+    .select_sign .main_sign {
+  max-width: 90%;
+}
+    .secrets-title{font-size: 36px;}
+    .choose_zodiac .select_sign {
+  height: 200px;
+}
+    .choose_zodiac .select_sign {
+  padding: 26px 22px 80px;
+  width: 100%;
+}
+.choose_zodiac .select_sign .sign_dropdown_div{padding: 12px 30px;}
+.sign_dropdown_div img {
+  max-width: 30%;
+}
+    .py-60{padding-bottom: 100px;}
+    .per_image2 img{max-width: 100%;}
+    .font76 {
+        font-size: 30px;
+    }
+    .font36 {
+        font-size: 26px;
+    }
+    .lh-70 {
+        line-height: 44px;
+    }
+
+    .astro_btn {
+        width: auto;
+        height: 45px;
+        line-height: 42px;
+    }
+    .font24, .font22 {
+        font-size: 18px;
+    }
+
+    .cnt_menu_link {
+        position: unset;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .py-80 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .line-height-46 {
+        line-height: 38px;
+    }
+
+    .horscope_image img {
+        width: 100%;
+    }
+
+    .horscope_image {
+        margin-top: 30px;
+    }
+
+    .abt_us, .our_products, .features, .faq, .contact_us {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .testimonial{padding-top: 0px;}
+    .font56 {
+        font-size: 34px;
+    }
+
+    .product_box {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .min-height-173 {
+        min-height: 120px;
+    }
+
+    .min-height-116 {
+        min-height: 90px;
+    }
+
+    .testimonial .carousel-indicators {
+        bottom: -55px;
+    }
+
+    .knw_horscope_section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .knw_horscope_section {
+        background-position: center;
+    }
+
+    .main_banner {
+        background-position: center;
+    }
+
+    .footer {
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .per_image img {
+        max-width: 88%;
+    }
+
+    .font52 {
+        font-size: 20px;
+    }
+
+    .choose_zodiac_btn img {
+        max-width: 55%;
+        margin-bottom: 0px;
+    }
+
+    .choose_zodiac_btn .font20 {
+        font-size: 12px;
+    }
+
+    .choose_zodiac_btn .font16 {
+        font-size: 9px;
+    }
+    .modal-body{padding-left: 5px;padding-right: 5px;}
+    .choose_zodiac_btn .checkmark, .choose_zodiac_btn {
+        height: 100px;
+        width: 100%;
+    }
+
+    .steps_logo img {
+        max-width: 52%;
+    }
+
+    .steps_logo {
+        top: 30px;
+        right: 20px;
+        text-align: right;
+    }
+
+    .per_image {
+        margin-bottom: 20px;
+    }
+
+    .px-20 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .mb-30 {
+        margin-bottom: 18px;
+    }
+    .font-70 {
+        font-size: 46px;
+    }
+    .choose_gender_btn img {
+        max-width: 32%;
+    }
+
+    .choose_gender_btn {
+        width: 100%;
+        line-height: 23px;
+        display: block;
+        height: 165px;
+        padding-top: 32px;
+    }
+
+    .choose_gender_btn .checkmark {
+        width: 100%;
+        height: 45px;
+    }
+
+    .continue_btn {
+        width: 160px;
+    }
+
+    .bck_btn {
+        width: 160px;
+    }
+
+    .font32 {
+        font-size: 25px;
+    }
+
+    .born_input_field {
+        padding-left: 10px;
+    }
+    .form-select{
+        background-position: right 10px center;
+        background-size: 12px 9px;
+        padding: .375rem 0rem .375rem .75rem;
+    }
+    .bg_gradient{
+        border-radius: 14px;
+    }
+    .free_button {
+        top: -21px;
+    }
+    .step_9_next.continue_btn {
+        font-size: 20px;
+    }
+    #step_9 .continue_btn {line-height: 29px;}
+    .form-check-input {
+        width: 20px;
+        height: 33px;
+    }
+    .check_div .font18 {
+        font-size: 14px;
+    }
+    .bg_gradient {
+        padding: 10px 30px;
+    }
+    .main_bg{
+        background-position: left 22% top;
+    }
+    .choose_yesno_btn, .choose_yesno_btn .checkmark{
+        width: 150px;
+    }
+    .check_div{
+        width: 100%;
+        padding: 36px 16px 25px;
+    }
+    .select_gender {
+        padding-top: 0px;
+        padding-bottom: 150px;
+    }
+
+    .yes_btn {
+        width: 160px;
+        height: 50px;
+        line-height: 48px;
+    }
+    .bg-text-new{background-color: #ed8a89;padding: 35px 25px;}
+    .s_banner_right_cnt .font52{font-size: 15px;}
+
+ /*   .per_image2  img{margin-bottom: 20px;}*/
+    .choose_concerns_btn .checkmark{margin-bottom: 10px;width: 100%;}
+    .mb-10{margin-bottom: 10px;}
+    #step_9 .font36 {font-size: 21px;}
+    #step_9 .font56 {font-size: 26px;}
+    .compatible_div{padding: 30px 10px;}
+    .compatible_div ul{display: flex;justify-content: center;}
+    .compatible_div ul li img {
+  max-width: 45%;
+}
+.com_text .font24 {
+  font-size: 16px;
+  line-height: 21px;
+}
+.compatible_div ul li .font20 {
+  font-size: 16px;
+}
+#step_1 .pt-50 {
+    padding-top: 60px;
+}
+
+}

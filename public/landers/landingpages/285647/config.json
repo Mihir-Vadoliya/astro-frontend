@@ -1,0 +1,16 @@
+{
+    "languages": ["es"],
+    "offer_id": 1095,
+    "lander_id": 1095,
+    "tracker": "binom",
+    "countries": ["CL","MX","AR","ES","CO","PR","US","PA"],
+    "astrologist": "Christin",
+    "design_id": 285647,
+    "gtmContainerId": "GTM-NMLWT7W",
+    "domains": [
+        "127.0.0.1:8000",
+        "dev.lydia-astro.com",
+        "pt.starsandthemoon-2020.com",
+        "lp.starsandthemoon-2020.com"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "languages": ["nl"],
+    "offer_id": 909,
+    "lander_id": 909,
+    "tracker": "binom",
+    "countries": ["NL"],
+    "astrologist": "Blanche",
+    "gtmContainerId": "GTM-PRT5RHT",
+    "domains": ["nl.function-tool.com","dev.lydia-astro.com", "127.0.0.1:8000"]
+}

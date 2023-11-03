@@ -1,0 +1,19 @@
+{
+    "languages": ["en"],
+    "campaign_id": 4551,
+    "offer_id": 835,
+    "lander_id": 835,
+    "tracker": "binom",
+    "countries": ["za"],
+    "astrologist": "Christin",
+    "gtmContainerId": "GTM-NMLWT7W",
+    "domains": [
+        "frontend.lydia-astro.com",
+        "front_lydia.adpeako.local",
+        "seconddomain.com",
+        "astro_frontend.test",
+        "ag.starsandthemoon-2020.com",
+        "dev.lydia-astro.com",
+        "127.0.0.1:8000"
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "languages": ["en"],
+    "offer_id": 1144,
+    "lander_id": 1144,
+    "tracker": "binom",
+    "countries": ["US"],
+    "astrologist": "Padre",
+    "gtmContainerId": "GTM-W6V3PB8",
+    "domains": [
+        "astro.abstract-astro.com",
+        "dev.lydia-astro.com",
+        "127.0.0.1:8000"
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "languages": ["en"],
+    "tracker": "binom",
+    "countries": ["CA","AU","AE"],
+    "astrologist": "Padre",
+    "gtmContainerId": "GTM-W6V3PB8",
+    "domains": [
+        "astro.abstract-astro.com",
+        "dev.lydia-astro.com",
+        "127.0.0.1:8000"
+    ]
+}

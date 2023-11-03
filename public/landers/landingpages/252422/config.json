@@ -1,0 +1,15 @@
+{
+    "languages": ["de"],
+    "offer_id": 962,
+    "countries": ["DE"],
+    "tracker": "binom",
+    "astrologist": "Christin",
+    "design_id": 252422,
+    "gtmContainerId": "GTM-PBRR4L2",
+    "domains": [
+        "127.0.0.1:8000",
+        "astrology-prism.com",
+        "dev.lydia-astro.com",
+        "lp.astrology-prism.com"
+    ]
+}

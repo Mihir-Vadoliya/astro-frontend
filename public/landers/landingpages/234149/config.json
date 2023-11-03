@@ -1,0 +1,14 @@
+{
+    "languages": ["en"],
+    "countries": ["ZA","GB","IE"],
+    "tracker": "binom",
+    "design_id": 234149,
+    "astrologist": "Lydia",
+    "gtmContainerId": "GTM-TNPHC57",
+    "domains": [
+        "en.lydia-astro.com",
+        "astro_frontend.test",
+        "dev.lydia-astro.com",
+        "127.0.0.1:8000"
+    ]
+}

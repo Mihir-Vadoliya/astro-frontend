@@ -1,0 +1,17 @@
+{
+    "languages": ["en"],
+    "offer_id": 835,
+    "lander_id": 835,
+    "tracker": "binom",
+    "countries": ["ZA"],
+    "astrologist": "Blanche",
+    "design_id": 100835,
+    "gtmContainerId": "GTM-K6ZM72M",
+    "domains": [
+        "en.all-universe.com",
+        "front_lydia.adpeako.local",
+        "astro_frontend.test",
+        "dev.lydia-astro.com",
+        "127.0.0.1:8000"
+    ]
+}

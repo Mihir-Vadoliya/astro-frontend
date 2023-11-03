@@ -1,0 +1,16 @@
+{
+    "languages": ["en"],
+    "offer_id": 947,
+    "lander_id": 947,
+    "tracker": "binom",
+    "countries": ["GB"],
+    "astrologist": "Christin",
+    "gtmContainerId": "GTM-",
+    "domains": [
+        "front_lydia.adpeako.local",
+        "lp.astro-answers-2020.com",
+        "astro_frontend.test",
+        "dev.lydia-astro.com",
+        "127.0.0.1:8000"
+    ]
+}

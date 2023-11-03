@@ -1,0 +1,16 @@
+{
+    "languages": ["pt"],
+    "offer_id": 1053,
+    "lander_id": 1053,
+    "tracker": "binom",
+    "countries": ["BR"],
+    "astrologist": "Blanche",
+    "design_id": 261912,
+    "gtmContainerId": "GTM-WHQ2J6P",
+    "domains": [
+        "moon-pion.com",
+        "lp.moon-pion.com",
+        "dev.lydia-astro.com",
+        "127.0.0.1:8000"
+    ]
+}

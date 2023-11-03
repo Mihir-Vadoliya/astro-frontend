@@ -1,0 +1,815 @@
+/* fonts */
+
+@font-face {
+    font-family: 'Times New Roman';
+    src: url('fonts/TimesNewRomanPSMT.woff2') format('woff2'), url('fonts/TimesNewRomanPSMT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.font-20 {
+    font-size: 16px;
+}
+
+.times {
+    font-family: 'Times New Roman';
+}
+
+.main_bg {
+    background: url(../images/hero_bg.jpg) no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.footer {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+
+/* step 1 */
+
+@font-face {
+    font-family: 'Times New Roman';
+    src: url('fonts/TimesNewRomanPS-BoldMT.woff2') format('woff2'), url('fonts/TimesNewRomanPS-BoldMT.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times New Roman';
+    src: url('fonts/TimesNewRomanPS-ItalicMT.woff2') format('woff2'), url('fonts/TimesNewRomanPS-ItalicMT.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+.sky-color {
+    color: #00fcff
+}
+
+.font-100 {
+    font-size: 60px;
+}
+
+.font-62 {
+    font-size: 30px;
+}
+
+.font-26 {
+    font-size: 26px;
+}
+
+.radio_cus_button {
+    display: table-cell;
+    position: relative;
+    height: 160px;
+    width: 160px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/* Hide the browser's default radio button */
+
+.radio_cus_button input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+/* Create a custom radio button */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 160px;
+    width: 160px;
+    background-color: #000d18;
+    border-radius: 10px;
+    border: 1px solid #00fcff;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.radio_cus_button:hover input~.checkmark {
+    background-color: #000d18;
+}
+
+
+/* When the radio button is checked, add a blue background */
+
+.radio_cus_button input:checked~.checkmark {
+    background-color: #006f77;
+    z-index: 0;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark:after {
+    content: unset;
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+
+.radio_cus_button input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the indicator (dot/circle) */
+
+.radio_cus_button .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+.position-unset {
+    position: unset;
+    transform: unset;
+}
+
+.main_bg {
+    overflow: hidden;
+}
+
+
+/* step 2 */
+
+.font-68 {
+    font-size: 68px;
+}
+
+.radio_cus_button_step2 {
+    display: table-cell;
+    position: relative;
+    height: 82px;
+    width: 82px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 84px;
+}
+
+
+/* Hide the browser's default radio button */
+
+.radio_cus_button_step2 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+/* Create a custom radio button */
+
+.checkmark_step2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 82px;
+    width: 82px;
+    background-color: #000d18;
+    border-radius: 10px;
+    border: 1px solid #00fcff;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.radio_cus_button_step2:hover input~.checkmark_step2 {
+    background-color: #000d18;
+}
+
+
+/* When the radio button is checked, add a blue background */
+
+.radio_cus_button_step2 input:checked~.checkmark_step2 {
+    background-color: #006f77;
+    z-index: 0;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark_step2:after {
+    content: unset;
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+
+.radio_cus_button_step2 input:checked~.checkmark_step2:after {
+    display: block;
+}
+
+
+/* Style the indicator (dot/circle) */
+
+.radio_cus_button_step2 .checkmark_step2:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.font-42 {
+    font-size: 42px;
+}
+
+
+/* step 3 */
+
+.radio_cus_button_step3 {
+    display: table-cell;
+    position: relative;
+    height: 82px;
+    width: 167px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/* Hide the browser's default radio button */
+
+.radio_cus_button_step3 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+/* Create a custom radio button */
+
+.checkmark_step3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 82px;
+    width: 167px;
+    background-color: #000d18;
+    border-radius: 10px;
+    border: 1px solid #00fcff;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.radio_cus_button_step3:hover input~.checkmark_step3 {
+    background-color: #000d18;
+}
+
+
+/* When the radio button is checked, add a blue background */
+
+.radio_cus_button_step3 input:checked~.checkmark_step3 {
+    background-color: #006f77;
+    z-index: 0;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark_step3:after {
+    content: unset;
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+
+.radio_cus_button_step3 input:checked~.checkmark_step3:after {
+    display: block;
+}
+
+
+/* Style the indicator (dot/circle) */
+
+.radio_cus_button_step3 .checkmark_step3:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+/* step 4 */
+
+.radio_cus_button_step4 {
+    display: table-cell;
+    position: relative;
+    height: 82px;
+    width: 167px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/* Hide the browser's default radio button */
+
+.radio_cus_button_step4 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+/* Create a custom radio button */
+
+.checkmark_step4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 82px;
+    width: 167px;
+    background-color: #000d18;
+    border-radius: 10px;
+    border: 1px solid #00fcff;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.radio_cus_button_step4:hover input~.checkmark_step4 {
+    background-color: #000d18;
+}
+
+
+/* When the radio button is checked, add a blue background */
+
+.radio_cus_button_step4 input:checked~.checkmark_step4 {
+    background-color: #006f77;
+    z-index: 0;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark_step4:after {
+    content: unset;
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+
+.radio_cus_button_step4 input:checked~.checkmark_step4:after {
+    display: block;
+}
+
+
+/* Style the indicator (dot/circle) */
+
+.radio_cus_button_step4 .checkmark_step4:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.font-46 {
+    font-size: 46px;
+}
+
+
+/* step 5 */
+
+.radio_cus_button_step5 {
+    display: table-cell;
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/* Hide the browser's default radio button */
+
+.radio_cus_button_step5 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+/* Create a custom radio button */
+
+.checkmark_step5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 200px;
+    background-color: #000d18;
+    border-radius: 10px;
+    border: 1px solid #00fcff;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.radio_cus_button_step5:hover input~.checkmark_step5 {
+    background-color: #000d18;
+}
+
+
+/* When the radio button is checked, add a blue background */
+
+.radio_cus_button_step5 input:checked~.checkmark_step5 {
+    background-color: #006f77;
+    z-index: 0;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark_step5:after {
+    content: unset;
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+
+.radio_cus_button_step5 input:checked~.checkmark_step5:after {
+    display: block;
+}
+
+
+/* Style the indicator (dot/circle) */
+
+.radio_cus_button_step5 .checkmark_step5:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+/* step 6 */
+
+@font-face {
+    font-family: 'Arial';
+    src: url('fonts/ArialMT.woff2') format('woff2'), url('fonts/ArialMT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.arial {
+    font-family: 'Arial';
+}
+
+.line-height-48 {
+    line-height: 48px;
+}
+
+.font-86 {
+    font-size: 86px;
+}
+
+.font-42 {
+    font-size: 42px;
+}
+
+.font-22 {
+    font-size: 22px;
+}
+
+.color080e12 {
+    color: #080e12;
+}
+
+.mt-90 {
+    margin-top: 90px;
+}
+
+.colorfff {
+    color: rgba(255, 255, 255, 0.3)
+}
+
+.step_6_button {
+    border-radius: 10px;
+    box-shadow: 8.186px -26.777px 148px 37px rgba(0, 0, 0, 0.39);
+    width: 505px;
+    height: 99px;
+    line-height: 95px;
+    background: url(../images/step_6_button_img.png) no-repeat;
+    border: 2px solid transparent;
+    background-size: cover;
+    transition: all .4s ease 0s;
+    -webkit-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+}
+
+.step_6_button:hover {
+    color: #00fcff;
+    background-color: #080e12;
+    background-image: unset;
+    border-radius: 10px;
+    border: 2px solid #00fcff;
+}
+
+.button_one_btn {
+    border-radius: 10px;
+    box-shadow: 8.186px -26.777px 148px 37px rgba(0, 0, 0, 0.39);
+    width: 296px;
+    height: 58px;
+    line-height: 50px;
+    background: url(../images/button1_bg_img.png) no-repeat;
+    background-size: cover;
+    transition: all .4s ease 0s;
+    -webkit-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    border: 2px solid transparent;
+}
+
+
+/* .button_one_btn:hover,
+
+.button_two_btn:hover {
+
+    background-color: #000d18;
+
+    background-image: unset;
+
+    color: rgba(0, 0, 0, 0.39);
+
+    border-color: #ddd;
+
+} */
+
+.button_two_btn {
+    border-radius: 10px;
+    box-shadow: 8.186px -26.777px 148px 37px rgba(0, 0, 0, 0.39);
+    width: 296px;
+    height: 58px;
+    line-height: 50px;
+    background: url(../images/button2_bg.png) no-repeat;
+    background-size: cover;
+    transition: all .4s ease 0s;
+    -webkit-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    border: 2px solid transparent;
+}
+
+.button_three_btn {
+    border-radius: 10px;
+    box-shadow: 8.186px -26.777px 148px 37px rgba(0, 0, 0, 0.39);
+    width: 296px;
+    height: 58px;
+    line-height: 50px;
+    background: url(../images/button3_bg.png) no-repeat;
+    background-size: cover;
+    transition: all .4s ease 0s;
+    -webkit-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    border: 2px solid transparent;
+}
+
+.button_one_btn:hover,
+.button_two_btn:hover,
+.button_three_btn:hover {
+    background-color: #000d18;
+    background-image: unset;
+    color: rgba(0, 0, 0, 0.39);
+    border-color: #ddd;
+}
+
+.pb-300 {
+    padding-bottom: 300px;
+}
+
+.step_6_footer a:hover {
+    color: #00fcff;
+}
+
+
+/* .text-f05e27{color: #f05e27;} */
+
+.get_acc_step_2_click .btn-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 12px;
+}
+
+b {
+    font-weight: bold;
+}
+
+.con_button_1 {
+    border-radius: 7px;
+    /* background-image: -moz-linear-gradient(0deg, #960330 0, #290a59 100%);
+    background-image: -webkit-linear-gradient( 0deg, #960330 0, #290a59 100%);
+    background-image: -ms-linear-gradient(0deg, #960330 0, #290a59 100%); */
+    background-color: #00fcff;
+    width: 100%;
+    height: 40px;
+    line-height: 38px;
+}
+
+.get_acc_step_2_click .modal-content {
+    padding-top: 30px;
+}
+
+
+/* 19 jan */
+
+.contact_us_popup .modal-title {
+    background: #000d18;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.contact_us_popup .btn-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 1;
+    background: url(../images/close-icon.png) no-repeat;
+    background-size: cover;
+    height: 35px;
+    width: 35px;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.font-26 {
+    font-size: 18px;
+}
+
+.step_1_content .radio_cus_button img {
+    max-width: 36%;
+}
+
+.step_1_content .radio_cus_button img.pb-3 {
+    padding-bottom: .25rem!important;
+}
+
+.for_resize {
+    max-width: 22%;
+}
+
+
+/* for responsive step 1 */
+
+@media only screen and (max-width: 992px) {
+    .font-100 {
+        font-size: 60px;
+    }
+    .font-62 {
+        font-size: 42px;
+    }
+    .font-86 {
+        font-size: 60px;
+    }
+    .font-46 {
+        font-size: 36px;
+    }
+    .font-68 {
+        font-size: 55px;
+    }
+    .font-42 {
+        font-size: 30px;
+    }
+    .line-height-48 {
+        list-style: 42px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .font-100 {
+        font-size: 46px;
+    }
+    .font-62 {
+        font-size: 40px;
+    }
+    .step_6_button,
+    .button_one_btn,
+    .button_three_btn,
+    .button_two_btn {
+        width: 100%;
+    }
+    .radio_cus_button,
+    .checkmark {
+        height: 100px;
+        width: 100px;
+    }
+    .font-26 {
+        font-size: 14px;
+    }
+    .font-20 {
+        font-size: 14px;
+    }
+    .font-46 {
+        font-size: 18px;
+    }
+    .checkmark_step2 {
+        height: 40px;
+        width: 40px;
+    }
+    .radio_cus_button_step2 {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+    }
+    .step_1_content .radio_cus_button img {
+        max-width: 25%;
+    }
+    .step_2_prev img {
+        max-width: 40%;
+    }
+    .step_2_next img {
+        max-width: 40%;
+    }
+    .font-68 {
+        font-size: 30px;
+    }
+    .radio_cus_button_step5 {
+        height: 150px;
+        width: 150px;
+    }
+    .checkmark_step5 {
+        height: 150px;
+        width: 150px;
+    }
+    .font-86 {
+        font-size: 30px;
+    }
+    .font-42 {
+        font-size: 22px;
+    }
+    .line-height-48 {
+        line-height: 26px;
+    }
+}

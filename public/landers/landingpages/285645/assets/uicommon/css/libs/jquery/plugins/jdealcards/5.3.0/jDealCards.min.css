@@ -1,0 +1,112 @@
+.j-card-holder,
+.j-card-holder div,
+.j-card-holder:first-child,
+.j-card-holder:last-child,
+.j-result-name {
+    float: left;
+    box-sizing: border-box
+}
+
+.j-card-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 0
+}
+
+.j-result-name:after,
+.j-result-name:before,
+.j-results-wrapper:after,
+.j-results-wrapper:before {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.j-card {
+    position: relative;
+    max-width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .5);
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.j-card-back:hover {
+    cursor: pointer
+}
+
+.j-result {
+    -webkit-transition: -webkit-transform .5s ease-out;
+    -moz-transition: -moz-transform .5s ease-out;
+    -o-transition: -o-transform .5s ease-out;
+    -ms-transition: -ms-transform .5s ease-out;
+    transition: transform .5s ease-out
+}
+
+.j-results-wrapper {
+    max-width: 100%;
+    margin: 15px auto
+}
+
+.j-card-holder:first-child {
+    margin: 0 5px 5px 0
+}
+
+.j-card-holder {
+    margin: 0 5px 5px
+}
+
+.j-card-holder:last-child {
+    margin: 0 0 5px 5px
+}
+
+.j-card-holder div {
+    background: rgba(255, 255, 255, .2);
+    border-radius: 6px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .5) inset, 0 -1px 1px rgba(255, 255, 255, .5) inset
+}
+
+.j-result-name {
+    margin: 10px auto;
+    padding: 10px 0;
+    width: 100%;
+    background: #4F7A96;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.5;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+    border-radius: 4px;
+    font-size: 12px !important;
+}
+
+@media only screen and (min-width :320px) {
+    .j-result-name {
+        font-size: 8px
+    }
+}
+
+@media only screen and (min-width :768px) {
+    .j-result-name {
+        font-size: 12px
+    }
+    .j-card-container {
+        padding: 0px 0;
+    }
+}
+
+@media only screen and (min-width :992px) {
+    .j-result-name {
+        font-size: 14px
+    }
+}

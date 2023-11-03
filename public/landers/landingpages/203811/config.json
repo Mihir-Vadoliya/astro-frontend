@@ -1,0 +1,16 @@
+{
+    "languages": ["de"],
+    "offer_id": 946,
+    "lander_id": 946,
+    "tracker": "binom",
+    "countries": ["DE"],
+    "astrologist": "Blanche",
+    "gtmContainerId": "GTM-PBRR4L2",
+    "domains": [
+        "front_lydia.adpeako.local",
+        "lp.astrology-prism.com",
+        "astro_frontend.test",
+        "dev.lydia-astro.com",
+        "127.0.0.1:8000"
+    ]
+}

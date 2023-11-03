@@ -1,0 +1,17 @@
+{
+    "languages": ["es"],
+    "offer_id": 892,
+    "lander_id": 892,
+    "design_id": 600010,
+    "tracker": "binom",
+    "countries": ["CL", "CO", "CR", "ES", "MX", "PA", "PE", "PR", "US"],
+    "astrologist": "Blanche",
+    "gtmContainerId": "GTM-NMLWT7W",
+    "domains": [
+        "mx.starsandthemoon-2020.com",
+        "cr.starsandthemoon-2020.com",
+        "lp.starsandthemoon-2020.com",
+        "dev.lydia-astro.com",
+        "127.0.0.1:8000"
+    ]
+}

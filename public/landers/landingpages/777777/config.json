@@ -1,0 +1,15 @@
+{
+    "languages": ["en"],
+    "offer_id": 1124,
+    "lander_id": 1124,
+    "tracker": "binom",
+    "countries": ["GB","CA","SE","SG","NZ","AU","DK","NO"],
+    "astrologist": "Christin",
+    "design_id": 777777,
+    "gtmContainerId": "",
+    "domains": [
+        "127.0.0.1:8000",
+        "dev.lydia-astro.com",
+        "lp.all-universe.com"
+    ]
+}

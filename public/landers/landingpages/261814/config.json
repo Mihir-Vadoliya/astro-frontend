@@ -1,0 +1,15 @@
+{
+    "languages": ["en"],
+    "offer_id": 1063,
+    "lander_id": 1063,
+    "tracker": "binom",
+    "countries": ["ZA","GB"],
+    "astrologist": "Blanche",
+    "design_id": 261814,
+    "gtmContainerId": "GTM-K6ZM72M",
+    "domains": [
+        "127.0.0.1:8000",
+        "dev.lydia-astro.com",
+        "lp.all-universe.com"
+    ]
+}

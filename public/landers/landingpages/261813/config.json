@@ -1,0 +1,15 @@
+{
+    "languages": ["pt"],
+    "offer_id": 1057,
+    "lander_id": 1057,
+    "tracker": "binom",
+    "countries": ["PT"],
+    "astrologist": "Padre",
+    "design_id": 261813,
+    "gtmContainerId": "GTM-K6ZM72M",
+    "domains": [
+        "127.0.0.1:8000",
+        "dev.lydia-astro.com",
+        "lp.all-universe.com"
+    ]
+}

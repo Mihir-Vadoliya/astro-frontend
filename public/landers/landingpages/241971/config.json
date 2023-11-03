@@ -1,0 +1,17 @@
+{
+    "languages": ["en"],
+    "offer_id": 871,
+    "lander_id": 871,
+    "tracker": "binom",
+    "countries": ["GB","ZA"],
+    "astrologist": "Christin",
+    "design_id": 241971,
+    "gtmContainerId": "GTM-K6ZM72M",
+    "domains": [
+        "lp.all-universe.com",
+        "astro_frontend.test",
+        "lp.astro-answers-2020.com",
+        "dev.lydia-astro.com",
+        "127.0.0.1:8000"
+    ]
+}

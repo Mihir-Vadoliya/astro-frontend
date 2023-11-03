@@ -1,0 +1,15 @@
+{
+    "languages": ["en"],
+    "tracker": "binom",
+    "countries": ["ZA"],
+    "astrologist": "Agatha",
+    "design_id": 252448,
+    "gtmContainerId": "GTM-WHQ2J6P",
+    "domains": [
+        "moon-pion.com",
+        "lp.moon-pion.com",
+        "127.0.0.1:8000",
+        "dev.lydia-astro.com",
+        "astro_frontend.test"
+    ]
+}
