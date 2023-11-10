@@ -19,7 +19,7 @@ use App\Http\Controllers\PaymentController;
 |
 */
 Route::get('/', function (){
-    echo "I knew you would pay me a visits";
+    echo "I knew you would pay me a visit";
 });
 
 Route::get('/checkStatus/{customerId}', [LanderController::class, 'checkStatus']);
