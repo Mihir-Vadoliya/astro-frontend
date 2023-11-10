@@ -397,12 +397,7 @@
                                     <div class="m_box m_box_group">
                                         <p class="bad-response"><span></span><br>{{$texts->mail_error}}</p>
                                         <input type="email" class="input-email" name="email" id="email" required placeholder="{{$texts->mail}}">
-                                        <fieldset class="step_mail__white-box">
-                                            <legend class="legend fw-bold">Free optional gift</legend>
-                                            <label class="check_text"><input type="checkbox" name="coreg" value="true">
-                                                My friend Ava can help you detect your POTENTIAL for WEALTH and GOOD FORTUNE!
-                                                Get her Free Reading Now!</label>
-                                        </fieldset>
+                                       
                                         <div class="col-md-12 text-center" id="relation-submit-btn">
                                             <button title="CONTINUE" type="submit" id="get_clarification" class="btn_1 bev button-email-next continue_btn-border" data-bevent="10"><i class="fa fa-hand-o-right px-2"></i>
                                                 {{$texts->button_free}}
@@ -418,17 +413,7 @@
                             <div class="gtm-screen-pending step_8">
                                 <div>
                                     <div>
-                                        <h3 class="step_8__title text-center">
-                                            Please wait a moment, while I am connecting you with your Guardian Angel...
-                                        </h3>
-                                        <p>
-                                            <br />
-                                            Your devoted friend, <br /><br />
-                                            Christin<br /><br />
-                                        </p>
-                                        <p class="step_8__white-box">
-                                            {{$texts->tip_text}}
-                                        </p>
+                                        @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
                                     </div>
                                 </div>
                             </div>
@@ -538,6 +523,12 @@
 
             $(".step_1 .button-box").on("click", function() {
                 let sign = $(this).data('sign');
+                let $element = $('input[name="googleClientId"]');
+                let cookieMatch = document.cookie.match(/_ga=(.+?);/);
+                if (cookieMatch) {
+                    let googleClientId = cookieMatch[1].split('.').slice(-2).join(".");
+                    $element.val(googleClientId);
+                }
                 $("input[name='sign']").attr('value', sign);
                 gaSend('select zodiac', 'button click', sign, 1);
                 gotoNextStep('.step_1', '.step_2');

@@ -511,12 +511,7 @@
                                         <div class="col-12 col-md-10">
                                             <input type="email" placeholder="E-mail" name="email" class="gtm-email born_input_field font24 medium montserrat text-black input-email" required="">
                                             <span class="error" id="step_9_error"></span>
-                                            <fieldset class="step_mail__white-box mt-3">
-                                                <legend class="legend fw-bold">{{$texts->coreg}}</legend>
-                                                <label class="check_text"><input type="checkbox" name="coreg" value="true">
-                                                    Conecte-se com o seu <b>Anjo da Guarda</b> graças à Angela e receba
-                                                    a sua <b>vidência dos anjos gratuita.</b></label>
-                                            </fieldset>
+                                           
                                         </div>
                                         <div class="col-12 pt-50 text-center">
                                         </div>

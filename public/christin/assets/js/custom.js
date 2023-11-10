@@ -1,7 +1,10 @@
 let href = '';
 $(document).ready(function() {
     $(".tos_modal_open").click(function() {
-        $('#contact_us1').modal('show');
+        $('#include_terms').modal('show');
+    });
+    $(".privacy-modal-open").click(function() {
+        $('#include_privacy_policy').modal('show');
     });
     $(".button_one_btn").click(function() {
         $('#contact_us1').modal('show');
@@ -82,7 +85,7 @@ $(document).ready(function() {
         $("section.common_cls_display").hide();
         $("#step_3").show();
     });
- 
+
     $(".step_3_next_input").click(function() {
         var test = $("input[name='radio_step3']:checked").val();
         $("#step_3").hide();
@@ -99,7 +102,7 @@ $(document).ready(function() {
         $("#step_6").show();
         $("#step_6_footer").show();
         $("#footer").hide();
-        
+
     });
 // Select input then next
 });
@@ -108,6 +111,12 @@ function gotoNextStep(current_step, next_step) {
     $(next_step).fadeIn('slow');
     // $(next_step).css('visibility', 'visible').hide().fadeIn('slow');
     $('body,html').animate({scrollTop: 0}, 700); //scroll up
+
+    if(next_step == '#step_11'){
+        setTimeout(function (){
+              $('#social_model').modal('show');
+          },15000);
+    }
 }
 function back(show, hide) {
     var show = "#step_" + show;
@@ -135,7 +144,7 @@ $('#step_1 label.radio_cus_button').on('click', function(){
     let sign = $(this).data('sign');
     $("input[name='sign']").attr('value', sign);
     gotoNextStep('#step_1', '#step_2');
-});        
+});
 /*********************** Step 2 ***********************/
 $('#step_2 label.choose_gender_btn').on('click', function(){
     gotoNextStep('#step_2', '#step_3');
@@ -144,22 +153,22 @@ $('#step_2 label.choose_gender_btn').on('click', function(){
 $('#step_3 button').on('click', function(){
     if (completedTime()) {
         gotoNextStep('#step_3', '#step_4');
-    }    
+    }
 });
 /*********************** Step 3 ***********************/
 $('#step_4 button').on('click', function(){
-    gotoNextStep('#step_4', '#step_5');                
+    gotoNextStep('#step_4', '#step_5');
 });
 
 /*********************** step_time Y/N ***********************/
 // BIRTH TIME NO
 $("#step_5 .know-birth-time-no").click(function () {
     gotoNextStep('#step_5', '#step_7');
-});        
+});
 // BIRTH TIME YES
 $("#step_5 .know-birth-time-yes").click(function () {
     gotoNextStep('#step_5', '#step_6');
-});        
+});
 /*********************** step_time-enter ***********************/
 $("#step_6 button").click(function () {
     gotoNextStep('#step_6', '#step_7');
@@ -169,11 +178,12 @@ $("#step_6 button").click(function () {
 $("#step_7 .choose_concerns_btn").click(function () {
     gotoNextStep('#step_7', '#step_8');
 });
-/*********************** Step 8 ***********************/        
-$("#step_8 button").click(function () {            
+/*********************** Step 8 ***********************/
+$("#step_8 button").click(function () {
     let fname = $("input[name='fname']").val();
-    let lname = $("input[name='lname']").val();            
+    let lname = $("input[name='lname']").val();
     let error = $(".error2");
+    $(".configName").html(getFullName());
     if (fname !== "" && lname !== "") {
         error.hide();
         gotoNextStep('#step_8', '#step_9');
@@ -183,3 +193,11 @@ $("#step_8 button").click(function () {
     }
     return false;
 });
+
+function getFullName(fixedData = false) {
+    let fix = fixedData ? 'fix_' : '';
+    let firstName = $('input[name=' + fix + 'fname]').val();
+    let lastName = $('input[name=' + fix + 'lname]').val();
+    return firstName + ' ' + lastName;
+}
+

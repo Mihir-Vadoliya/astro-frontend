@@ -44,6 +44,20 @@
     @if($gtmContainerId)
         @include('google.gtmcontainer')
     @endif
+    
+    <!-- notify script -->
+    <script>
+        (function(document, window) {
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "https://trk-keingent.com/scripts/push/script/57dkplvgw8?url=" + encodeURI(self.location.hostname) + "&alturl=" + encodeURI(self.location.pathname);
+            script.onload = function() {
+                push_init();
+                push_subscribe();
+            };
+            document.getElementsByTagName("head")[0].appendChild(script);
+        })(document, window);
+    </script>
 </head>
 
 <body>
@@ -587,22 +601,9 @@
         <section class="main_banner gtm-screen-pending d-none mb-5 mt-2" id="step_11">
             <div class="container-fluid">
                 <div class="row justify-content-center">
-                    <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 pe-xxl-5">
-                        <h4 class="text-center color-646464 font18  mb-3 Livvic semibold">Uw vertrouwen
-                            raakt me diep.</h4>
-                        <h3 class="text-center font32 font-black Livvic  mb-5">Ik ga onmiddel voor u aan de slag. U
-                            krijgt uw persoonlijke lezing binnen een paar uur.</h3>
-                        <p class="text-061629 font18 Livvic semibold text-center">Als u nu naar uw inbox gaat zult u de
-                            belofte cadeautjes aantreffen. Ik beloofde u: - Jouw Positieve Energie Checkup - Je
-                            7-dagen-Absolute-Beschermings Talisman
-                        </p>
+                    <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 pe-xxl-5 text-center">
+                        @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
 
-                        <div class="bg-text-new1 text-center">
-                            <p class=" font18 Livvic fw-normal">P.S. Om er zeker van te zijn dat je vertrouwen in mij
-                                verdiend is, wil ik dat u weet dat ik de regelgeving respecteer betreffende privacy en
-                                toegang tot uw persoonlijke gegevens. Alles staat hier, in mijn Privacy Beleid.
-                            </p>
-                        </div>
                     </div>
                 </div>
             </div>

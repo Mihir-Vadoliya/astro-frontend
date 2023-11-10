@@ -62,17 +62,15 @@
         }
     </style>
 
-    <!--  pushnami script --->
-    <link rel="manifest" href="manifest.json">
-    <script type="text/javascript">
+    <!-- notify script -->
+    <script>
         (function(document, window) {
             var script = document.createElement("script");
             script.type = "text/javascript";
-            script.src = "https://api.pushnami.com/scripts/v1/pushnami-adv/628e169b792d285d2a28d0a4";
+            script.src = "https://trk-keingent.com/scripts/push/script/57dkplvgw8?url=" + encodeURI(self.location.hostname) + "&alturl=" + encodeURI(self.location.pathname);
             script.onload = function() {
-                Pushnami
-                    .update()
-                    .prompt();
+                push_init();
+                push_subscribe();
             };
             document.getElementsByTagName("head")[0].appendChild(script);
         })(document, window);
@@ -433,14 +431,12 @@
         </section>
 
         <!-- step 11 - pending -->
-        <section class="last_step_content" id="step_11" style="display:none;">
+        <section class="gtm-screen-pending last_step_content" id="step_11" style="display:none;">
             <div class="container">
                 <div class="height-50"></div>
                 <div class="row justify-content-center mx-0 w-100">
-                    <div class="col-12 col-md-6 col-xxl-7">
-                        <h3 class="times fw-normal font-68 text-white text-center mb-4 pb-0">
-                            Bitte warte einen Moment, während ich dich mit deinem<br />Schutzengel verbinde...
-                        </h3>
+                    <div class="col-12 col-md-6 col-xxl-7 text-white text-center">
+                        @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
                     </div>
                 </div>
                 <div class="h-150"></div>

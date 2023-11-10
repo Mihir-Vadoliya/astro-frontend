@@ -31,7 +31,19 @@
     <link href="https://fonts.googleapis.com/css2?family=roboto:wght@300;400;500;700;900&family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="{{$asset_path}}assets/css/stye.css" rel="stylesheet">
     <script src="{{ asset('assets') }}/js/lander.js" type="module"></script>
-    @include('scripts.pushnamisubs.astro_astrology_lotus')
+    <!-- notify script -->
+    <script>
+        (function(document, window) {
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "https://trk-keingent.com/scripts/push/script/57dkplvgw8?url=" + encodeURI(self.location.hostname) + "&alturl=" + encodeURI(self.location.pathname);
+            script.onload = function() {
+                push_init();
+                push_subscribe();
+            };
+            document.getElementsByTagName("head")[0].appendChild(script);
+        })(document, window);
+    </script>
     <style>
         .error {
             color: red
@@ -482,10 +494,9 @@
                 <div class="container">
                     <div class="height-50"></div>
                     <div class="row justify-content-center mx-0 w-100">
-                        <div class="col-12 col-md-6 col-xxl-7">
-                            <h3 class="times fw-normal font-68 text-white text-center mb-4 pb-0">
-                                Veuillez patienter un moment, pendant que je vous connecte avec votre<br />Ange Gardien...
-                            </h3>
+                        <div class="col-12 col-md-6 col-xxl-7 text-center text-white">
+                            @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
+
                         </div>
                     </div>
                     <div class="h-150"></div>

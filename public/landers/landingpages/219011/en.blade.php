@@ -448,11 +448,6 @@
                             <div class="row justify-content-center mx-0 w-100">
                                 <div class="col-12  col-xxl-11">
                                     <input type="email" placeholder="E-mail" name="email" required class="enter_city font24 medium times text-center text-blue">
-                                    <fieldset class="step_mail__white-box mt-3">
-                                        <legend class="legend fw-bold">Free optional gift</legend>
-                                        <label class="check_text"><input type="checkbox" name="coreg" value="true">
-                                            My friend Ava can help you detect your POTENTIAL for WEALTH and GOOD FORTUNE! Get her Free Reading Now!</label>
-                                    </fieldset>
                                 </div>
                                 <div class="col-12 col-lg-10 col-xxl-11 pt-4 text-center">
                                     <br>
@@ -475,12 +470,9 @@
                 <div class="container">
                     <div class="height-50"></div>
                     <div class="row justify-content-center mx-0 w-100">
-                        <div class="col-12 col-md-6 col-xxl-7">
-                            <h3 class="times fw-normal font-68 text-white text-center mb-4 pb-0">{{$texts->wait_while_i_am_connecting_you}}</h3>
+                        <div class="col-12 col-md-6 col-xxl-7 text-center text-white">
+                            @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
 
-                            <p class="font-16 fw-normal text-white mb-0 text-center"><b>{{$texts->your_devoted_friend}}</b></p>
-                            <p class="font-16 fw-normal text-white text-center">{{$texts->blanche}}</p>
-                            <p class="font-16 fw-normal text-white text-center">{{$texts->tip_text}}</p>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,12 @@
+{
+    "languages": ["nl"],
+    "offer_id": 909,
+    "lander_id": 909,
+    "tracker": "binom",
+    "countries": ["NL","BE"],
+    "astrologist": "Blanche",
+    "gtmContainerId": "GTM-PRT5RHT",
+    "domains": [
+        "nl.function-tool.com"
+    ]
+}

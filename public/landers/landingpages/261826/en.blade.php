@@ -698,11 +698,6 @@
                         <p class="error step_9_error d-none">Please fill out this fields </p>
                         <ul class="list-unstyled list-inline">
                           <li class="list-inline-item me-0 w-100">
-                            <fieldset class="step_mail__white-box text-white font-14">
-                                <legend class="legend fw-bold sky-color-2">Free optional gift</legend>
-                                <label class="check_text"><input type="checkbox" name="coreg" value="true">
-                                    <b>Money - Love - Happiness -</b> Let Ava, the star clairvoyant, transmit the power of luck to you and receive your free fortune telling.</label>
-                            </fieldset>
                             <button type="submit"
                               class="continue_btn   font-18  text-decoration-none text-center d-inline-block w-100 continue_btn-border px-lg-2 px-xxl-3  text-white step_9_next"><i class="fa fa-hand-o-right px-2"></i>
                               <b>Get your free reading</b>
@@ -716,20 +711,10 @@
 
                 <!-- pendding screen -->
                 <div class="step_11 d-none gtm-screen-pending">
-                  <h3 class="fw-bold font-18 mb-0 text-uppercase text-white text-center mb-0 heading_steps pt-xl-4">I will
-                    immediately
-                    get down to work for you. My answer will reach you in the next hours.
-                  </h3>
                   <div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-10 col-xl-10 col-xxl-12">
-                      <p class="text-white fw-normal font-14 text-center mb-2">Go to your inbox now and discover the gifts I
-                        promised you: – Your Positive Energy Checkup – Your 7-Days-of-Absolute-Protection Talisman</p>
+                    <div class="col-12 col-md-10 col-lg-10 col-xl-10 col-xxl-12 text-white text-center">
 
-                      <p class="text-white fw-normal font-14 text-center mb-0">P.S. To make sure your trust in me is
-                        merited, I
-                        want you to know that I respect the regulation regarding privacy and access to your personal data.
-                        Everything is here, in my Privacy Policy.
-                      </p>
+                      @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
                     </div>
                   </div>
                 </div>

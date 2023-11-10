@@ -416,6 +416,11 @@
             </div>
 
         </div>
+        <section class="gtm-screen-pending select_gender d-none" id="step_12">
+            <div class="container text-center text-white">
+                @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
+            </div>
+        </section>
     </section>
     <!-- <section class="disclamer">
 

@@ -459,11 +459,7 @@
                 <div class="col-12 col-md-12 col-lg-3 col-xl-8">
                   <!-- <label class="montserrat font-18 text-white d-block fw-regular mb-2">E-mail:</label> -->
                   <input type="email" placeholder="Email" name="email" class="gtm-email first_name_field" required>
-                  <fieldset class="step_mail__white-box mt-3">
-                    <legend class="legend fw-bold">Presente opcional gratuito</legend>
-                    <label class="check_text"><input type="checkbox" name="coreg" value="true">
-                      Conecte-se com o seu <b class="fw-bold">Anjo da Guarda</b> graças à Angela e receba a sua <b class="fw-bold">vidência dos anjos gratuita.</b></label>
-                  </fieldset>
+                  
                 </div>
                 <span class="step_6_error error d-none">Por favor complete este campo</span>
                 <div class="col-12 text-center text-md-start mt-3">
@@ -485,22 +481,8 @@
             </div>
             <div class="col-12 col-sm-12 col-md-10 col-xl-10 pt-3 gtm-screen-pending d-none">
               <div class="row justify-content-start">
-                <div class="col-12 col-md-12 col-lg-3 col-xl-8">
-                  <h3 class="step_8__title text-center text-white text-md-start">
-                    Aguarde um momento, enquanto estou conectando você com seu<br />anjo da guarda...
-                  </h3>
-                  <p class="text-white text-center text-md-start">
-                    <br />
-                    O seu amigo dedicado
-                    <br />
-                    <br />
-                    Padre
-                    <br />
-                    <br />
-                  </p>
-                  <p class="step_8__white-box text-white text-center text-md-start">
-                    P.S. Para que a sua confiança em mim seja merecida, quero que saiba que respeito o regulamento relativo à privacidade e ao acesso aos seus dados pessoais. Tudo está aqui, na minha <a href="javascript:void(0);" class="text-white montserrat fw-regular font-16 text-decoration-none privacy_modal">Política de Privacidade</a>
-                  </p>
+                <div class="col-12 col-md-12 col-lg-3 col-xl-8 text-white">
+                  @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
                 </div>
               </div>
             </div>

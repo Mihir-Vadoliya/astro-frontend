@@ -31,7 +31,19 @@
     <link href="https://fonts.googleapis.com/css2?family=roboto:wght@300;400;500;700;900&family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="{{$asset_path}}assets/css/stye.css" rel="stylesheet">
     <script src="{{ asset('assets') }}/js/lander.js" type="module"></script>
-    @include('scripts.pushnamisubs.astro_astrology_lotus')
+    <!-- notify script -->
+    <script>
+        (function(document, window) {
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "https://trk-keingent.com/scripts/push/script/57dkplvgw8?url=" + encodeURI(self.location.hostname) + "&alturl=" + encodeURI(self.location.pathname);
+            script.onload = function() {
+                push_init();
+                push_subscribe();
+            };
+            document.getElementsByTagName("head")[0].appendChild(script);
+        })(document, window);
+    </script>
     <style>
         .error {
             color: red
@@ -482,58 +494,32 @@
                 <div class="container">
                     <div class="height-50"></div>
                     <div class="row justify-content-center mx-0 w-100">
-                        <div class="col-12 col-md-6 col-xxl-7">
-                            <h3 class="times fw-normal font-68 text-white text-center mb-4 pb-0">
-                                Veuillez patienter un moment, pendant que je vous connecte avec votre<br />Ange Gardien...
-                            </h3>
+                        <div class="col-12 col-md-6 col-xxl-7 text-white text-center">
+                            @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
                         </div>
                     </div>
                     <div class="h-150"></div>
                 </div>
             </section>
+            <style>
+                .gtm-screen-thankyou li:before {
+                    background-color: white;
+                    top: 6px;
+                }
+                .gtm-screen-thankyou li:before {
+                    background-color: white;
+                }
+                .gtm-screen-thankyou ul {
+                    margin-left: 10px !important;
+                    list-style-type: none;
+                    padding-left: 0rem;
+                }
+                .gtm-screen-thankyou p {
+                    margin-left: 6px;
+                }
+            </style>
             <section class="gtm-screen-thankyou last_step_content" id="step_10" style="display:none;">
-                <div class="container">
-                    <div class="height-50"></div>
-                    <div class="row justify-content-center mx-0 w-100">
-                        <div class="col-12 col-md-6 col-xxl-7">
-                            <h6 class="fw-normal montserrat text-white text-center mb-0 font-18 pb-0 times">Votre confiance
-                                me touche
-                                profondément.</h6>
-                            <h3 class="elegante fw-normal font-68 text-white text-center mb-4 pb-0 times">Je me mets
-                                immédiatement au
-                                travail pour vous. Ma réponse vous parviendra dans les prochaines heures.</h3>
-                            <p class="font-16 fw-normal text-white text-center times">Allez dans votre boîte de réception
-                                maintenant et découvrez les cadeaux que je vous ai promis : - Votre bilan d'énergie positive
-                                - Votre talisman de protection des 7 jours d'absolution.</p>
-                            <ul class="text-center list-inline list-unstyled">
-                                <li class="font-16 fw-normal text-white times">- Accéder à votre boîte de réception</li>
-                                <li class="font-16 fw-normal text-white times">- Vérifiez votre boîte de réception ou vos
-                                    spams
-                                </li>
-                                <li class="font-16 fw-normal text-white times">- Ouvrez mon e-mail et accédez à vos cadeaux
-                                    de
-                                    bienvenue.
-                                </li>
-                                <li class="font-16 fw-normal text-white times">- Suivez sur les réseaux sociaux</li>
-                                <div class="d-flex pt-3 justify-content-center">
-                                    <a href="javascript:void(0);" class="text-decoration-none social_icon_link" data-id="instagram">
-                                        <i class="fa-brands fa-instagram text-white font-40 px-3"></i></a>
-                                    <a href="javascript:void(0);" class="text-decoration-none social_icon_link" data-id="facebook">
-                                        <i class="fa-brands fa-facebook text-white font-40 px-3"></i></a>
-                                    <a href="javascript:void(0);" class="text-decoration-none social_icon_link" data-id="youtube">
-                                        <i class="fa-brands fa-youtube text-white font-40 px-3"></i></a>
-                                    <a href="javascript:void(0);" class="text-decoration-none social_icon_link" data-id="tictock">
-                                        <i class="fa-brands fa-tiktok text-white font-40 px-3"></i></a>
-                                </div>
-                            </ul>
-                            <p class="font-16 fw-normal text-white text-center times">P.S. Pour que votre confiance en moi
-                                soit
-                                méritée, je veux que vous sachiez que je respecte la réglementation en matière de
-                                confidentialité et d'accès à vos données personnelles. Tout est là, dans ma politique de
-                                confidentialité.</p>
-                        </div>
-                    </div>
-                </div>
+                @include('/landers/landingpages/thankyou/'.$language.'/thankyou')
             </section>
         </form>
         <div class="container">

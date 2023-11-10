@@ -469,12 +469,6 @@
                                     <input type="email" placeholder="E-Mail" name="email" required class="gtm-email enter_city font24 medium montserrat text-center text-white">
                                 </div>
                                 <div class="col-12 col-lg-10 col-xxl-11 pt-4 text-center">
-                                    <fieldset class="step_mail__white-box text-white font-14">
-                                        <legend class="legend fw-bold sky-color-2">Kostenloses optionales Geschenk</legend>
-                                        <label class="check_text"><input type="checkbox" name="coreg" value="true">
-                                            <b>Verbinden Sie sich mit Ihrem Schutzengel</b> mit der Hilfe von Angela und erhalten Sie Ihre <b>kostenlose Engelszukunftsdeutung.</b><label class="check_text">
-                                    </fieldset>
-                                    <br>
                                     <button type="submit" class="gtm-email-continue all_continue_btn font-20 text-uppercase text-center w-100 text-white d-inline-block">Erhalten Sie meine komplette Hellseherei KOSTENLOS</button>
                                 </div>
                             </div>
@@ -488,10 +482,8 @@
                 <div class="container">
                     <div class="height-50"></div>
                     <div class="row justify-content-center mx-0 w-100">
-                        <div class="col-12 col-md-6 col-xxl-7">
-                            <h3 class="times fw-normal font-68 text-white text-center mb-4 pb-0">
-                                Bitte warte einen Moment, während ich dich mit deinem<br />Schutzengel verbinde...
-                            </h3>
+                        <div class="col-12 col-md-6 col-xxl-7 text-center text-white">
+                            @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
                         </div>
                     </div>
                     <div class="h-150"></div>

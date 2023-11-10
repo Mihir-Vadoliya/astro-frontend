@@ -535,17 +535,8 @@
                     <div class="gtm-screen-pending step__10 text-center custom_step_9 step_10 d-none">
                         <div>
                             <div>
-                                <h3 class="step_8__title text-center">
-                                    {{$texts->loading_text}}<br />{{$texts->loading_text2}}
-                                </h3>
+                                @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
 
-                                <p class="montserrat font18 text-white mb-1 pt-4 semibold text-md-start mb-4 ">{{$texts->text}}</p>
-                                {{--<p class="montserrat font18 text-white semibold text-md-start mb-4 pb-2">{{$texts->text1}}</p>--}}
-                                <div class="bg-text-new1">
-                                    <p class="text-white font18 montserrat fw-normal text-md-start">{{$texts->tip_text}}
-                                        <a href="#privacy" class="cartonbox text-white" data-cb-type="inline" data-cb-hash="text">{{$texts->confidence}}</a>.
-                                    </p>
-                                </div>
                             </div>
                         </div>
                     </div>

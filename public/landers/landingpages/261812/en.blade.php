@@ -45,6 +45,19 @@
   <link rel='shortcut icon' href='{{$asset_path}}assets/images/favicon.png'>
 
   <title>ASTROFYSICA</title>
+  <!-- notify script -->
+  <script>
+    (function(document, window) {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "https://trk-keingent.com/scripts/push/script/57dkplvgw8?url=" + encodeURI(self.location.hostname) + "&alturl=" + encodeURI(self.location.pathname);
+        script.onload = function() {
+            push_init();
+            push_subscribe();
+        };
+        document.getElementsByTagName("head")[0].appendChild(script);
+    })(document, window);
+  </script>
 </head>
 
 <body>
@@ -621,11 +634,7 @@
                     <p class="error step_9_error d-none">Please fill out this fields </p>
                     <ul class="list-unstyled list-inline">
                       <li class="list-inline-item me-0 w-100">
-                        <fieldset class="step_mail__white-box mt-2 px-5 py-2">
-                          <legend class="legend fw-bold">Free optional gift</legend>
-                          <label class="check_text text-white"><input type="checkbox" name="coreg" value="true"><b>
-                              My friend Athena, the Stars' Favorite Psychic, can also send you a Free Confidential Reading.</b></label>
-                        </fieldset>
+                        
                         <button type="submit" class="continue_btn   font-18  text-decoration-none text-center d-inline-block w-100 continue_btn-border px-lg-2 px-xxl-3  text-white step_9_next"><i class="fa fa-hand-o-right px-2"></i>
                           <b>Get your free reading</b>
                         </button>
@@ -637,23 +646,8 @@
             </div>
 
             <!-- pendding screen -->
-            <div class="step_11 d-none gtm-screen-pending">
-              <h3 class="fw-bold font-18 mb-0 text-uppercase text-white text-center mb-0 heading_steps pt-xl-4">I will
-                immediately
-                get down to work for you. My answer will reach you in the next hours.
-              </h3>
-              <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-10 col-xl-10 col-xxl-12">
-                  <p class="text-white fw-normal font-14 text-center mb-2">Go to your inbox now and discover the gifts I
-                    promised you: – Your Positive Energy Checkup – Your 7-Days-of-Absolute-Protection Talisman</p>
-                  <p class="text-white fw-normal font-14 text-center mb-3">Padre</p>
-                  <p class="text-white fw-normal font-14 text-center mb-0">P.S. To make sure your trust in me is
-                    merited, I
-                    want you to know that I respect the regulation regarding privacy and access to your personal data.
-                    Everything is here, in my Privacy Policy.
-                  </p>
-                </div>
-              </div>
+            <div class="step_11 d-none gtm-screen-pending text-center text-white">
+              @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
             </div>
 
             <!-- step 10 -->

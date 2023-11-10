@@ -13,7 +13,7 @@
         private $ApiKey='22000001997d54b0cda7da83e1e23450fe48aa31';
 
         function __construct($CampaignKey){
-            $CampaignLink = "https://dealstrack.online/click.php";
+            $CampaignLink = "https://toptrackpro.com/click.php";
             if(strpos($CampaignLink, '?')!==false){
                 $this->ClickURL=$CampaignLink.'&lp_type=click_info&api_key='.$this->ApiKey;
             }else{

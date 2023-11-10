@@ -499,15 +499,7 @@
                                     <input type="email" placeholder="E-mail" name="email" class="born_input_field text-center font24 medium Mersad color-c6dee8 input-email gtm-email" required>
                                     <!-- <span class="error" id="step_9_error d-none">Gelieve dit veld in te vullen</span> -->
                                 </div>
-                                <div class="col-12 pt-3 text-center">
-                                    <fieldset class="step_mail__white-box text-white font-14">
-                                        <legend class="legend fw-bold sky-color-2">Cadeau optionnel gratuit</legend>
-                                        <label class="check_text"><input type="checkbox" name="coreg" value="true">
-                                            <b>Argent – Amour – Bonheur –</b> Laissez Athena, la voyante des stars vous
-                                            transmettre le <b>pouvoir de la chance</b> et recevez votre <b>voyance
-                                                gratuite.</b></label>
-                                    </fieldset>
-                                </div>
+                                
                                 <div class="col-12 pt-3 text-center">
                                     <ul class="list-unstyled list-inline">
                                         <li class="list-inline-item me-0 w-100">
@@ -529,24 +521,9 @@
             <div class="main_banner gtm-screen-pending d-none mb-5 mt-5" id="step_11">
                 <div class="container-fluid">
                     <div class="row justify-content-center">
-                        <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 pe-xxl-5">
-                            <h4 class="text-center text-B5815E font18  mb-3 Mersad semibold">Votre confiance me touche
-                                profondément.</h4>
-                            <h3 class="text-center font32 text-white Mersad  mb-5">Je me mets immédiatement au
-                                travail pour vous. Ma réponse vous parviendra dans les prochaines heures.</h3>
-                            <p class="text-061629 font18 Mersad semibold text-center text-white">Allez dans votre boîte de
-                                réception
-                                maintenant et découvrez les cadeaux que je vous ai promis : - Votre bilan d'énergie positive
-                                - Votre talisman de protection des 7 jours d'absolution.
-                            </p>
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 pe-xxl-5 text-center text-white">
+                            @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
 
-                            <div class="bg-text-new1 text-center">
-                                <p class=" font18 Mersad fw-normal text-white">P.S. Pour que votre confiance en moi soit
-                                    méritée, je veux que vous sachiez que je respecte la réglementation en matière de
-                                    confidentialité et d'accès à vos données personnelles. Tout est là, dans ma politique de
-                                    confidentialité.
-                                </p>
-                            </div>
                         </div>
                     </div>
                 </div>

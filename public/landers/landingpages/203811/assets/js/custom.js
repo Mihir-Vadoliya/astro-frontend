@@ -1,9 +1,15 @@
 /*********************** Step 1 ***********************/
 $('#step_1 label.radio_cus_button').on('click', function(){
     let sign = $(this).data('sign');
+    let $element = $('input[name="googleClientId"]');
+    let cookieMatch = document.cookie.match(/_ga=(.+?);/);
+    if (cookieMatch) {
+        let googleClientId = cookieMatch[1].split('.').slice(-2).join(".");
+        $element.val(googleClientId);
+    }
     $("input[name='sign']").attr('value', sign);
     gotoNextStep('#step_1', '#step_2');
-});        
+});
 /*********************** Step 2 ***********************/
 $('#step_2 label.choose_gender_btn').on('click', function(){
     gotoNextStep('#step_2', '#step_3');
@@ -12,22 +18,22 @@ $('#step_2 label.choose_gender_btn').on('click', function(){
 $('#step_3 button').on('click', function(){
     if (completedTime()) {
         gotoNextStep('#step_3', '#step_4');
-    }    
+    }
 });
 /*********************** Step 3 ***********************/
 $('#step_4 button').on('click', function(){
-    gotoNextStep('#step_4', '#step_5');                
+    gotoNextStep('#step_4', '#step_5');
 });
 
 /*********************** step_time Y/N ***********************/
 // BIRTH TIME NO
 $("#step_5 .know-birth-time-no").click(function () {
     gotoNextStep('#step_5', '#step_7');
-});        
+});
 // BIRTH TIME YES
 $("#step_5 .know-birth-time-yes").click(function () {
     gotoNextStep('#step_5', '#step_6');
-});        
+});
 /*********************** step_time-enter ***********************/
 $("#step_6 button").click(function () {
     gotoNextStep('#step_6', '#step_7');
@@ -37,10 +43,10 @@ $("#step_6 button").click(function () {
 $("#step_7 .choose_concerns_btn").click(function () {
     gotoNextStep('#step_7', '#step_8');
 });
-/*********************** Step 8 ***********************/        
-$("#step_8 button").click(function () {            
+/*********************** Step 8 ***********************/
+$("#step_8 button").click(function () {
     let fname = $("input[name='fname']").val();
-    let lname = $("input[name='lname']").val();            
+    let lname = $("input[name='lname']").val();
     let error = $(".error2");
     if (fname !== "" && lname !== "") {
         error.hide();

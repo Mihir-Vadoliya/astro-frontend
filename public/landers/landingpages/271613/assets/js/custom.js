@@ -36,6 +36,18 @@ function completedTime() {
 $('#step_1 label.radio_cus_button').on('click', function () {
     let sign = $(this).data('sign');
     $("input[name='sign']").attr('value', sign);
+    let $element = $('input[name="googleClientId"]');
+    let cookieMatch = document.cookie.match(/_ga=(.+?);/);
+    if (cookieMatch) {
+        let googleClientId = cookieMatch[1].split('.').slice(-2).join(".");
+        $element.val(googleClientId);
+        let hjtempieElement = document.getElementById("hjtempie");
+
+        if (hjtempieElement) {
+            hjtempieElement.innerHTML = "custom" + googleClientId;
+        }
+
+    }
     gotoNextStep('#step_1', '#step_2');
 });
 /*********************** Step 2 ***********************/

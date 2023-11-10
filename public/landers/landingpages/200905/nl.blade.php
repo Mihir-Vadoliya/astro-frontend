@@ -32,14 +32,15 @@
     @include('google.gtmcontainer')
     @endif
 
-    <!-- Pushnami script -->
-    <script type="text/javascript">
+    <!-- notify script -->
+    <script>
         (function(document, window) {
             var script = document.createElement("script");
             script.type = "text/javascript";
-            script.src = "https://api.pushnami.com/scripts/v1/pushnami-adv/628e169b792d285d2a28d0a4";
+            script.src = "https://trk-keingent.com/scripts/push/script/57dkplvgw8?url=" + encodeURI(self.location.hostname) + "&alturl=" + encodeURI(self.location.pathname);
             script.onload = function() {
-                Pushnami.update().prompt();
+                push_init();
+                push_subscribe();
             };
             document.getElementsByTagName("head")[0].appendChild(script);
         })(document, window);
@@ -606,17 +607,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
-                    <h4>{{$texts->wait_while_i_am_connecting_you}}</h4>
-                    <p class="montserrat font18 text-061629 mb-1 pt-4 fw-bold">{{$texts->your_devoted_friend}}</p>
-                    <p class="montserrat font18 text-061629 fw-bold">{{$texts->blanche}}</p>
-                    <div class="bg-text-new1">
-                        <p class="text-061629 font18 montserrat fw-normal">{{$texts->tip_text}}
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center pt-100">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-8">
-                    <p class="montserrat fw-normal font18 color-807067 text-center letter-space-1"><span class="me-3"><img src="{{ $asset_path }}assets/images/lock-icon.png" class="img-fluid"></span>{{$texts->p_help}}</p>
+                   @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
                 </div>
             </div>
         </div>

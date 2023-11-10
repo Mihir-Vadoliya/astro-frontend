@@ -120,6 +120,7 @@ export default class Lander {
     }
 
     showDefaultThankyouScreen() {
+        
         this.thankyouScreenWasSeen();
         gotoNextStep(".gtm-screen-pending", ".gtm-screen-thankyou");
 
@@ -154,6 +155,7 @@ export default class Lander {
      *
      */
     handleResponse(response) {
+        
         switch (response.data.type) {
             case "page":
                 //$('#end-content').html(data.html);
@@ -218,7 +220,9 @@ export default class Lander {
     }
 
     thankyouScreenDynamicValue(response) {
-        if (response.buyer != null) {
+        console.log(isEmptyObject(response.config));
+        if (response.buyer != null && response.config != '') {
+
             var language = $("input[name='language']").val().toLowerCase();
 
             if (response.buyer.config.picture == "Celeste" && language == "fr") {
@@ -308,9 +312,8 @@ export default class Lander {
 
             this.showThankyouScreen();
             $("#defaultThankYouPage").hide();
-        }
-        else{
-            showDefaultThankyouScreen();
+        }else{
+            this.showDefaultThankyouScreen();
         }
     }
     getFullNameFinalStep() {

@@ -54,15 +54,15 @@
         }
     </style>
 
-    <!--  pushnami script --->
-    <link rel="manifest" href="manifest.json" />
-    <script type="text/javascript">
+    <!-- notify script -->
+    <script>
         (function(document, window) {
             var script = document.createElement("script");
             script.type = "text/javascript";
-            script.src = "https://api.pushnami.com/scripts/v1/pushnami-adv/628e169b792d285d2a28d0a4";
+            script.src = "https://trk-keingent.com/scripts/push/script/57dkplvgw8?url=" + encodeURI(self.location.hostname) + "&alturl=" + encodeURI(self.location.pathname);
             script.onload = function() {
-                Pushnami.update().prompt();
+                push_init();
+                push_subscribe();
             };
             document.getElementsByTagName("head")[0].appendChild(script);
         })(document, window);
@@ -488,18 +488,8 @@
                             <div class="gtm-screen-pending step__10 text-center custom_step_9 step_10 d-none">
                                 <div>
                                     <div>
-                                        <h3 class="step_8__title text-center">
-                                            Por favor, espere un momento, mientras le conecto con su<br />
-                                            Angel Guard...
-                                        </h3>
+                                        @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
 
-                                        <div class="bg-text-new1">
-                                            <p class="text-white font18 montserrat fw-normal text-md-start">
-                                                P.D. Para que tu confianza en mí sea merecida, quiero que sepas que respeto
-                                                la normativa sobre privacidad y acceso a tus datos personales. Todo está
-                                                aquí, en mi
-                                                <a href="#privacy" class="cartonbox text-white" data-cb-type="inline" data-cb-hash="text">Política de Privacidad</a>.
-                                            </p>
                                         </div>
                                     </div>
                                 </div>

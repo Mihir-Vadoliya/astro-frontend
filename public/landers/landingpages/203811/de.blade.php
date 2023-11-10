@@ -468,11 +468,8 @@
                 <div class="height-50"></div>
 
                     <div class="row justify-content-center mx-0 w-100">
-                        <div class="col-12 col-md-6 col-xxl-7">
-                            <h3 class="times fw-normal font-68 text-white text-center mb-4 pb-0">{{$texts->wait_while_i_am_connecting_you}}</h3>
-                            <p class="font-16 fw-normal text-white mb-0 text-center"><b>{{$texts->your_devoted_friend}}</b></p>
-                            <p class="font-16 fw-normal text-white text-center">{{$texts->blanche}}</p>
-                            <p class="font-16 fw-normal text-white text-center">{{$texts->tip_text}}</p>
+                        <div class="col-12 col-md-6 col-xxl-7 text-center text-white">
+                            @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,15 @@
+{
+    "languages": ["fr"],
+    "offer_id": 866,
+    "lander_id": 866,
+    "tracker": "binom",
+    "countries": ["CA"],
+    "astrologist": "Blanche",
+    "design_id": 285943,
+    "gtmContainerId": "GTM-WLVK5X7",
+    "domains": [
+        "127.0.0.1:8000",
+        "astro.astrology-lotus.com",
+        "lp.astrology-prism.com"
+    ]
+}

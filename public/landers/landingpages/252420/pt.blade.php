@@ -396,15 +396,8 @@
                         </div>
                         <div class="col-12 col-sm-12 col-md-10 col-xl-10 pt-3 gtm-screen-pending d-none">
                             <div class="row justify-content-start">
-                                <div class="col-12 col-md-12 col-lg-3 col-xl-8">
-                                    <h3 class="step_8__title text-center text-white text-md-start">
-                                        Aguarde um momento, enquanto estou conectando você com seu<br />anjo da guarda...
-                                    </h3>
-                                    <p class="step_8__white-box text-white text-center text-md-start">
-                                        P.S. Para que a sua confiança em mim seja merecida, quero que saiba que respeito o
-                                        regulamento relativo à privacidade e ao acesso aos seus dados pessoais. Tudo está
-                                        aqui, na minha Política de Privacidade
-                                    </p>
+                                <div class="col-12 col-md-12 col-lg-3 col-xl-8 text-white">
+                                    @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
                                 </div>
                             </div>
                         </div>

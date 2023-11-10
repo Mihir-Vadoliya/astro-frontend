@@ -168,42 +168,17 @@
         <div class="col-12 col-md-6 col-xxl-7">
             <div class="justify-content-start align-items-center">
                 <h3 class="times fw-normal text-white text-center mb-4 pb-0">
-                    Your trust touches me <span class="configName">[Name]</span>
+                    I immediately go to work for you. My answer will reach you in the next few hours.
                 </h3>
             </div>
             <p class="font-16 fw-normal text-white text-start">
-                I immediately go to work for you. My answer will reach you in the next few hours.
-                <br><br>
-                To make sure you receive my free gift please follow the steps below :
+                Go to your inbox now and discover the gifts I promised you: - Your positive energy balance sheet - Your 7 Days of Absolution Protection Talisman.
             </p>
             <ul class="text-start text-white mb-3 mt-3">
-                <li>Open your inbox</li>
-                <li>Confirm your email address in the validation email I’ve just sent</li>
-                <li>Receive your gift</li>
-                <li>Follow me on social media for more gifts </li>
+                <li>1. Access your inbox</li>
+                <li>2. Check your inbox or spam</li>
+                <li>3. Open my email and access your gifts from welcome.</li>
             </ul>
-            <p class="font-16 fw-normal text-white text-start">
-                Please keep an eye on your inbox. I’m sure you will love it!
-                <br>
-                Love,
-            </p>
-            <div class="d-flex justify-content-start text-start social-div">
-                <a href="javascript:void(0);" class="text-decoration-none social_icon_link" data-id="instagram">
-                    <img src="/landers/sets/socialMedia/instagram.png" class="social_icon">
-                </a>
-
-                <a href="javascript:void(0);" class="text-decoration-none social_icon_link" data-id="facebook">
-                    <img src="/landers/sets/socialMedia/facebook.png" class="social_icon">
-                </a>
-
-                <a href="javascript:void(0);" class="text-decoration-none social_icon_link" data-id="youtube">
-                    <img src="/landers/sets/socialMedia/youtube.png" class="social_icon">
-                    <!-- <i class="fa-brands fa-youtube text-dark font-65 px-3"></i> -->
-                </a>
-                <a href="javascript:void(0);" class="text-decoration-none social_icon_link" data-id="tictock">
-                    <img src="/landers/sets/socialMedia/tictock.png" class="social_icon">
-                </a>
-            </div>
             <p class="font-16 fw-normal text-white text-start">
                 P.S. So that your trust in me is deserved, I want you to know that I respect the regulations in terms of confidentiality and access to your personal data. It's all there, in my policy of privacy.
             </p>

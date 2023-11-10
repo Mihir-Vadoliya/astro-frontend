@@ -10,6 +10,12 @@
         yourSign.attr('src', path_to_yourSign);
         yourSign.attr('alt', strsign);
         yourSign.attr('title', strsign);
+        let $element = $('input[name="googleClientId"]');
+        let cookieMatch = document.cookie.match(/_ga=(.+?);/);
+        if (cookieMatch) {
+            let googleClientId = cookieMatch[1].split('.').slice(-2).join(".");
+            $element.val(googleClientId);
+        }
 
         $('.sign-box__yourSign').removeClass('d-none');
 

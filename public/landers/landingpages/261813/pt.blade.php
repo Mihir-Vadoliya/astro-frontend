@@ -46,6 +46,19 @@
     <link rel='shortcut icon' href='{{$asset_path}}assets/images/favicon.png'>
 
     <title>ASTROFYSICA</title>
+    <!-- notify script -->
+    <script>
+        (function(document, window) {
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "https://trk-keingent.com/scripts/push/script/57dkplvgw8?url=" + encodeURI(self.location.hostname) + "&alturl=" + encodeURI(self.location.pathname);
+            script.onload = function() {
+                push_init();
+                push_subscribe();
+            };
+            document.getElementsByTagName("head")[0].appendChild(script);
+        })(document, window);
+    </script>
 </head>
 
 <body>
@@ -670,14 +683,6 @@
                                     <p class="error step_9_error d-none">Por favor preencha estes campos </p>
                                     <ul class="list-unstyled list-inline">
                                         <li class="list-inline-item me-0 w-100">
-
-                                            <fieldset class="step_mail__white-box mt-2 px-5 py-2">
-                                                <legend class="legend fw-bold">Presente opcional gratuito</legend>
-                                                <label class="check_text text-white px-2"><input type="checkbox"
-                                                                                                 name="coreg"
-                                                                                                 value="true"><span
-                                                        class="px-1">Conecte-se com o seu <b>Anjo da Guarda</b> graças à Angela e receba a sua <b>vidência dos anjos gratuita.</b></span></label>
-                                            </fieldset>
                                             <button type="submit"
                                                     class="continue_btn   font-18  text-decoration-none text-center d-inline-block w-100 continue_btn-border px-lg-2 px-xxl-3  text-white step_9_next">
                                                 <i class="fa fa-hand-o-right px-2"></i>
@@ -692,20 +697,9 @@
 
                     <!-- pendding screen -->
                     <div class="step_11 d-none gtm-screen-pending">
-                        <h3 class="fw-bold font-18 mb-0 text-uppercase text-white text-center mb-0 heading_steps pt-xl-4">
-                            Irei imediatamente ao trabalho para si. A minha resposta irá chegar-lhe nas próximas horas.
-                        </h3>
                         <div class="row justify-content-center">
-                            <div class="col-12 col-md-10 col-lg-10 col-xl-10 col-xxl-12">
-                                <p class="text-white fw-normal font-14 text-center mb-2">Vá agora à sua caixa de entrada
-                                    e descubra os presentes que lhe prometi: - O seu Checkup de Energia Positivo - O seu
-                                    Talismã de 7 Dias de Absoluto-Protecção</p>
-                                <p class="text-white fw-normal font-14 text-center mb-3">Padre</p>
-                                <p class="text-white fw-normal font-14 text-center mb-0">P.S. Para que a sua confiança
-                                    em mim seja merecida, quero que saiba que respeito o regulamento relativo à
-                                    privacidade e ao acesso aos seus dados pessoais.
-                                    Tudo está aqui, na minha Política de Privacidade.
-                                </p>
+                            <div class="col-12 col-md-10 col-lg-10 col-xl-10 col-xxl-12 text-white text-center">
+                                @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
                             </div>
                         </div>
                     </div>

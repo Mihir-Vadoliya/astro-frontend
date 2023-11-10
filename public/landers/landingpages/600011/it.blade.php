@@ -389,13 +389,8 @@
           </div>
           <div class="col-12 col-sm-12 col-md-10 col-xl-10 pt-3 gtm-screen-pending d-none">
             <div class="row justify-content-center">
-              <div class="col-12 col-md-12 col-lg-3 col-xl-8 text-center">
-                  <h3 class="step_8__title text-center text-dark">
-                    Per favore, aspetta un momento, mentre ti connetto con il tuo<br />Angelo custode...
-                </h3>
-                <p class="step_8__white-box text-dark">
-                    PS Per assicurarmi che la tua fiducia in me sia meritata, voglio che tu sappia che rispetto le normative sulla privacy e sull'accesso ai tuoi dati personali. È tutto qui nella mia politica sulla privacy.
-                </p>
+            <div class="col-12 col-md-12 col-lg-3 col-xl-8 text-center text-white">
+              @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
               </div>
             </div>
           </div>

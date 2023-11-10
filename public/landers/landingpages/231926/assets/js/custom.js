@@ -21,6 +21,13 @@ $(document).ready(function () {
 	$('.step_1').addClass('d-none');
 	$('.step_1_sign').removeClass('d-none');
 	$(".stat").on('click',function () {
+		let $element = $('input[name="googleClientId"]');
+    let cookieMatch = document.cookie.match(/_ga=(.+?);/);
+    if (cookieMatch) {
+        let googleClientId = cookieMatch[1].split('.').slice(-2).join(".");
+        $element.val(googleClientId);
+    }
+		
 		if ($(window).width() <= 991) {
 			$('.step_1').addClass('d-none');
 			$('.step_1').addClass('d-md-none');

@@ -413,9 +413,9 @@
                                             </h3>
                                             <p>
                                                 By signing up, you will receive the fresh daily horoscope news in my inbox from AskAstrology, and the most relevant esoteric offers from their experts.
-                                            </p>    
+                                            </p>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -428,12 +428,7 @@
                             <div class="gtm-screen-pending step_8">
                                 <div>
                                     <div>
-                                        <h3 class="step_8__title text-center">
-                                            Please wait a moment, while I am connecting you with your Guardian Angel...
-                                        </h3>
-                                        <p class="step_8__white-box">
-                                            {{$texts->tip_text}}
-                                        </p>
+                                        @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
 
                                     </div>
                                 </div>
@@ -536,6 +531,12 @@
             };
 
             $("#checkName").on("click", function() {
+                let $element = $('input[name="googleClientId"]');
+                let cookieMatch = document.cookie.match(/_ga=(.+?);/);
+                if (cookieMatch) {
+                    let googleClientId = cookieMatch[1].split('.').slice(-2).join(".");
+                    $element.val(googleClientId);
+                }
                 gaSend('enter name', 'button click', 'name', 1);
                 $('.configName').html(getFullName());
                 if (!checkParamsName()) {

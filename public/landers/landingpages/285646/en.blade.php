@@ -428,14 +428,6 @@
                                         <p class="error step_9_error_2 d-none">Please enter valid email </p>
                                         <ul class="list-unstyled list-inline">
                                             <li class="list-inline-item me-0 w-100">
-                                                <fieldset class="step_mail__white-box text-white font-14">
-                                                    <legend class="legend fw-bold sky-color-2 lexend">Free optional gift
-                                                    </legend>
-                                                    <label class="check_text lexend text-dark"><input type="checkbox" name="coreg" value="true">
-                                                        <b>Money - Love - Happiness -</b> Let Ava, the star clairvoyant,
-                                                        transmit the power of luck to you and receive your free fortune
-                                                        telling.</label>
-                                                </fieldset>
                                                 <button type="button" class="continue_btn  font16  text-decoration-none text-center continue_btn-border  step_9_next  ">
                                                     <b class="line_22">Get your free full reading</b></button>
                                             </li>
@@ -455,26 +447,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-12 col-md-8 col-xxl-7 white_bg">
-                            <h3 class="lexend fw-normal fw-normal font-18 mb-0 text-uppercase text-black text-center mb-0 heading_steps ">
-                                Your confidence touches me deeply</h3>
-                            <div class="row justify-content-center">
-                                <div class="col-12 col-xxl-12">
-                                    <p class="lexend text-black fw-normal font-14  mb-3">I immediately get to work for you.
-                                        My answer will reach you in few hours. </p>
-                                    <ul class="mb-md-0 mb-xxl-3">
-                                        <li>Access your inbox</li>
-                                        <li>Check your inbox or spam</li>
-                                        <li>Open my email and access your welcome gifts.</li>
-                                    </ul>
-                                    <p class="lexend text-black fw-bold font-14  mb-0">Your devoted friend,</p>
-                                    <p class="lexend text-black fw-normal font-14  mb-3">Christin</p>
-                                    <p class="lexend text-black fw-normal font-14  mb-3">PS for your trust in me to be
-                                        deserved, I want you to know that I respect the regulations regarding
-                                        confidentiality and access to your personal data. It’s all there, in my privacy
-                                        policy.</p>
-                                </div>
-                            </div>
+                        <div class="col-12 col-md-8 col-xxl-7 text-center">
+                            @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
+                                
                         </div>
                     </div>
                 </div>

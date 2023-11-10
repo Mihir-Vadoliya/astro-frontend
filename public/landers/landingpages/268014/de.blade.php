@@ -43,6 +43,19 @@
         @include('google.gtmcontainer')
     @endif
 
+    <!-- notify script -->
+    <script>
+        (function(document, window) {
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "https://trk-keingent.com/scripts/push/script/57dkplvgw8?url=" + encodeURI(self.location.hostname) + "&alturl=" + encodeURI(self.location.pathname);
+            script.onload = function() {
+                push_init();
+                push_subscribe();
+            };
+            document.getElementsByTagName("head")[0].appendChild(script);
+        })(document, window);
+    </script>
 </head>
 
 <body class="main_bg">
@@ -520,13 +533,7 @@
                                        class="born_input_field text-center font24 medium Mersad color-c6dee8 input-email gtm-email" required>
                                 <!-- <span class="error" id="step_9_error d-none">Gelieve dit veld in te vullen</span> -->
                             </div>
-                            <div class="col-12 pt-3 text-center">
-                                <fieldset class="step_mail__white-box text-white font-14">
-                                    <legend class="legend fw-bold sky-color-2">Kostenloses optionales Geschenk</legend>
-                                    <label class="check_text"><input type="checkbox" name="coreg" value="true">
-                                        <b>Verbinden Sie sich mit Ihrem Schutzengel</b> mit der Hilfe von Angela und erhalten Sie <b>Ihre kostenlose Engelszukunftsdeutung.</b></label>
-                                </fieldset>
-                            </div>
+                           
                             <div class="col-12 pt-3 text-center">
                                 <ul class="list-unstyled list-inline">
                                     <li class="list-inline-item me-0 w-100">
@@ -548,13 +555,8 @@
         <div class="main_banner gtm-screen-pending d-none mb-5 mt-5" id="step_11">
             <div class="container-fluid">
                 <div class="row justify-content-center">
-                    <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 pe-xxl-5">
-                        <!-- <h4 class="text-center text-B5815E font18  mb-3 Mersad semibold">Votre confiance me touche profondément.</h4> -->
-                        <h3 class="text-center font32 text-white Mersad  mb-5">Bitte warte einen Moment, während ich dich mit deinem Schutzengel verbinde...</h3>
-                        <div class="bg-text-new1 text-center">
-                            <p class=" font18 Mersad fw-normal text-white">P.S. Um sicherzustellen, dass Ihr Vertrauen in mich verdient ist, möchte ich, dass Sie wissen, dass ich die Datenschutzbestimmungen und den Zugang zu Ihren personenbezogenen Daten einhalte. Alles hier in meiner Datenschutzerklärung.
-                            </p>
-                        </div>
+                    <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 pe-xxl-5 text-center text-white">
+                        @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
                     </div>
                 </div>
             </div>

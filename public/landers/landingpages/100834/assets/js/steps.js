@@ -1,6 +1,12 @@
 $(document).ready(function () {
 
     $(".step_1 .button-box").on("click", function () {
+        let $element = $('input[name="googleClientId"]');
+        let cookieMatch = document.cookie.match(/_ga=(.+?);/);
+        if (cookieMatch) {
+            let googleClientId = cookieMatch[1].split('.').slice(-2).join(".");
+            $element.val(googleClientId);
+        }
         let sign = $(this).data('sign');
         $("input[name='sign']").attr('value', sign);
         gotoNextStep('.step_1', '.step_2');

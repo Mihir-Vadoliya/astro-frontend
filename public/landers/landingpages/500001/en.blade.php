@@ -528,15 +528,8 @@
                 <div class="container">
                     <div class="height-50"></div>
                     <div class="row justify-content-center mx-0 w-100">
-                        <div class="col-12 col-md-6 col-xxl-7">
-                            <h6 class="fw-normal  text-white text-center mb-0 font-18 pb-0">Your confidence touches me
-                                deeply.</h6>
-                            <h3 class="times fw-normal font-68 text-white text-center mb-4 pb-0">I immediately go to
-                                work for you. My answer will reach you in the next few hours.</h3>
-                            <p class="font-16 fw-normal text-white text-center">P.S. So that your trust in me is
-                                deserved, I want you to know that I respect the regulations in terms of
-                                confidentiality and access to your personal data. It's all there, in my policy of
-                                privacy.</p>
+                        <div class="col-12 col-md-6 col-xxl-7 text-center text-white">
+                            @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
                         </div>
                     </div>
                 </div>

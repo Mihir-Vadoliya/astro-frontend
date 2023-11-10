@@ -77,6 +77,7 @@ if (isset($_POST['email']) && !empty($_POST['email'])) {
         CURLOPT_POSTFIELDS => array(
             'email' => $_POST['email'],
             'api_token'=>$api_token,
+            'googleClientId' => $_POST['googleClientId'] ?? null,
             'offer_id' =>$offer_id,
             'offer' =>$offer_id,
             'design_id' => $design_id,
@@ -130,4 +131,3 @@ if (isset($_POST['email']) && !empty($_POST['email'])) {
     echo $response;
     exit;
 }
-

@@ -402,11 +402,7 @@
                         <div class="col-2 col-md-2 col-lg-3 col-xl-8">
                             <p class="montserrat font-24 fw-bold  text-center mt-50 ">Email:</p>
                             <input type="email" placeholder="Email" name="email" class="gtm-email first_name_field email" required>
-                            <fieldset class="step_mail__white-box">
-                                <legend class="legend fw-bold">Free optional gift</legend>
-                                <input type="checkbox" name="coreg" value="true">
-                                <label class="check_text">Connect with your Guardian Angel through Angela and receive your free angel reading.</label>
-                            </fieldset>
+                            
                         </div>
                         <span class="step_6_error error d-none col-12 pt-20 text-center" style="color: red; font-weight: bold;">Please fill out this fields</span>
                         <div class="col-12 text-center mt-5">

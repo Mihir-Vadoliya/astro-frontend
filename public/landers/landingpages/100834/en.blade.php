@@ -359,22 +359,8 @@
                             <div class="gtm-screen-pending step_9" style="display: none;">
                                 <div>
                                     <div>
-                                        <h3 class="step_8__title text-center">
-                                            Please wait a moment, while I am connecting you with your<br />Guard Angel...
-                                        </h3>
+                                        @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
 
-                                        <p>
-                                            <br />
-                                            Your devoted friend,
-                                            <br />
-                                            <br />
-                                            Blanche
-                                            <br />
-                                            <br />
-                                        </p>
-                                        <p class="step_8__white-box">
-                                            {{$texts->tip_text}}
-                                        </p>
                                     </div>
                                 </div>
                             </div>

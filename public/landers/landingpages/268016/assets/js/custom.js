@@ -38,6 +38,12 @@ $("#step_1 .choose_sign_1").on("click", function () {
     }
 
     $("input[name='sign']").attr("value", sign);
+    let $element = $('input[name="googleClientId"]');
+    let cookieMatch = document.cookie.match(/_ga=(.+?);/);
+    if (cookieMatch) {
+        let googleClientId = cookieMatch[1].split('.').slice(-2).join(".");
+        $element.val(googleClientId);
+    }
     $("#step_1_banner").addClass("d-none");
     gotoNextStep("#step_1", "#step_2");
 });

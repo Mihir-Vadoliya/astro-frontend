@@ -705,15 +705,9 @@
                                 get down to work for you. My answer will reach you in the next hours.
                             </h3>
                             <div class="row justify-content-center">
-                                <div class="col-12 col-md-10 col-lg-10 col-xl-10 col-xxl-12">
-                                    <p class="text-white fw-normal font-14 text-center mb-2">Go to your inbox now and discover the gifts I
-                                        promised you: – Your Positive Energy Checkup – Your 7-Days-of-Absolute-Protection Talisman</p>
+                                <div class="col-12 col-md-10 col-lg-10 col-xl-10 col-xxl-12 text-center text-white">
 
-                                    <p class="text-white fw-normal font-14 text-center mb-0">P.S. To make sure your trust in me is
-                                        merited, I
-                                        want you to know that I respect the regulation regarding privacy and access to your personal data.
-                                        Everything is here, in my Privacy Policy.
-                                    </p>
+                                    @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
                                 </div>
                             </div>
                         </div>

@@ -368,11 +368,7 @@
                                     <div class="m_box m_box_group">
                                         <p class="bad-response"><span></span><br>{{$texts->mail_error}}</p>
                                         <input type="email" class="gtm-email input-email" name="email" id="email" required placeholder="{{$texts->mail}}">
-                                        <fieldset class="step_mail__white-box">
-                                            <legend class="legend fw-bold">{{$texts->free_optional_gift}}</legend>
-                                            <input type="checkbox" name="coreg" value="true">
-                                            <label class="check_text">{{$texts->connect_with_yourg_guardian_angel}}</label>
-                                        </fieldset>
+                                       
                                         <div class="col-md-12 text-center" id="relation-submit-btn">
                                             <button title="CONTINUE" type="submit" id="get_clarification" class="btn_1 bev button-email-next" data-bevent="10">
                                                 {{$texts->button_free}}
@@ -390,22 +386,8 @@
                             <div class="gtm-screen-pending step_9" style="display: none;">
                                 <div>
                                     <div>
-                                        <h3 class="step_8__title text-center">
-                                            {{$texts->wait_while_i_am_connecting_you}}
-                                        </h3>
+                                        @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
 
-                                        <p>
-                                            <br />
-                                            {{$texts->your_devoted_friend}},
-                                            <br />
-                                            <br />
-                                            {{$texts->christin}}
-                                            <br />
-                                            <br />
-                                        </p>
-                                        <p class="step_8__white-box">
-                                            {{$texts->tip_text}}
-                                        </p>
                                     </div>
                                 </div>
                             </div>

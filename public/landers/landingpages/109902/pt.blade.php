@@ -511,12 +511,7 @@
                                         <div class="col-12 col-md-10">
                                             <input type="email" placeholder="E-mail" name="email" class="gtm-email born_input_field font24 medium montserrat text-black input-email" required="">
                                             <span class="error" id="step_9_error"></span>
-                                            <fieldset class="step_mail__white-box mt-3">
-                                                <legend class="legend fw-bold">{{$texts->coreg}}</legend>
-                                                <label class="check_text"><input type="checkbox" name="coreg" value="true">
-                                                    Conecte-se com o seu <b>Anjo da Guarda</b> graças à Angela e receba
-                                                    a sua <b>vidência dos anjos gratuita.</b></label>
-                                            </fieldset>
+                                            
                                         </div>
                                         <div class="col-12 pt-50 text-center">
                                         </div>
@@ -541,17 +536,8 @@
                     <div class="gtm-screen-pending step__10 text-center custom_step_9 step_10 d-none">
                         <div>
                             <div>
-                                <h3 class="step_8__title text-center">
-                                    {{$texts->loading_text}}<br />{{$texts->loading_text2}}
-                                </h3>
+                                @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
 
-                                <p class="montserrat font18 text-white mb-1 pt-4 semibold text-md-start mb-4 ">{{$texts->text}}</p>
-                                {{--<p class="montserrat font18 text-white semibold text-md-start mb-4 pb-2">{{$texts->text1}}</p>--}}
-                                <div class="bg-text-new1">
-                                    <p class="text-white font18 montserrat fw-normal text-md-start">{{$texts->tip_text}}
-                                        <a href="#privacy" class="cartonbox text-white" data-cb-type="inline" data-cb-hash="text">{{$texts->confidence}}</a>.
-                                    </p>
-                                </div>
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,15 @@
+{
+    "languages": ["en"],
+    "countries": [
+        "ZA"
+    ],
+    "tracker": "binom",
+    "design_id": 600017,
+    "gtmContainerId": "GTM-K6ZM72M",
+    "domains": [
+        "lp.all-universe.com",
+        "astro_frontend.test", 
+        "dev.lydia-astro.com",
+        "127.0.0.1:8000"
+    ]
+}

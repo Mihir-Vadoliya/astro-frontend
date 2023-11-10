@@ -606,12 +606,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
-                    <h4>{{$texts->wait_while_i_am_connecting_you}}</h4>
-                    <p class="montserrat font18 text-061629 mb-1 pt-4 fw-bold">{{$texts->your_devoted_friend}}</p>
-                    <p class="montserrat font18 text-061629 fw-bold">{{$texts->blanche}}</p>
-                    <div class="bg-text-new1">
-                        <p class="text-061629 font18 montserrat fw-normal">{{$texts->tip_text}}
-                    </div>
+                    @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
                 </div>
             </div>
             <div class="row justify-content-center pt-100">

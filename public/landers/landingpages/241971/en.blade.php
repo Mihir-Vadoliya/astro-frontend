@@ -560,16 +560,6 @@
                                        class="gtm-email enter_city font24 medium montserrat text-center text-white">
                             </div>
                             <div class="col-12 col-lg-10 col-xxl-11 pt-4 text-center">
-                                <fieldset class="step_mail__white-box">
-                                    <legend class="legend fw-bold color-3d3b3b">Free optional gift</legend>
-
-                                    <label class="check_text color-3d3b3b"><input type="checkbox" name="coreg"
-                                                                                  value="true"
-                                                                                  style="    margin-right: 11px;">Connect
-                                        with your Guardian Angel through Ava and receive your free angel
-                                        reading.</label>
-                                </fieldset>
-                                <br>
                                 <button type="submit"
                                         class="gtm-email-continue all_continue_btn font-20 text-uppercase text-center w-100 text-white d-inline-block">
                                     Get my complete clairvoyance for FREE
@@ -603,14 +593,12 @@
             @include('/landers/landingpages/thankyou/'.$language.'/thankyou')
         </section>
         <!-- step 11 - pending -->
-        <section class="last_step_content" id="step_11" style="display:none;">
+        <section class="last_step_content gtm-screen-pending" id="step_11" style="display:none;">
             <div class="container">
                 <div class="height-50"></div>
                 <div class="row justify-content-center mx-0 w-100">
-                    <div class="col-12 col-md-6 col-xxl-7">
-                        <h3 class="times fw-normal font-68 text-center mb-4 pb-0">
-                            Please wait a moment, while I am connecting you with your<br/>Guard Angel...
-                        </h3>
+                    <div class="col-12 col-md-6 col-xxl-7 text-center">
+                        @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
                     </div>
                 </div>
                 <div class="h-150"></div>

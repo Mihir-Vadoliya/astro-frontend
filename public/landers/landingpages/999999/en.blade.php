@@ -711,20 +711,7 @@
                                     <span class="error" id="step_9_error"></span>
                                 </div>
                         </div>
-                        <div class="col-12 free_gift_div text-center ">
-                            <div class="check_div position-relative">
-                                <div class="position-absolute free_button">
-                                    <p class="josefin medium font18 text-white bg_gradient mb-0">Free optional gift</p>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="true" name="coreg" id="flexCheckDefault">
-                                    <label class="form-check-label josefin medium font20 text-white text-start" for="flexCheckDefault">
-                                        My friend Ava can help you detect your POTENTIAL for WEALTH and GOOD FORTUNE! Get
-                                        her Free Reading Now!
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
+                        
                         <div class="col-12 col-md-8 col-xl-4 pt-50 text-center">
                             <ul class="list-unstyled list-inline">
                                 <li class="list-inline-item me-0">
@@ -740,17 +727,8 @@
 
             <!-- step 12 -->
             <section class="gtm-screen-pending select_gender d-none" id="step_12">
-                <div class="container">
-                    <h3 class="text-center text-white font36 semi josefin mb-4 mb-xl-4 mb-xxl-5 lh-70 text-capitalize">Your
-                        confidence touches me deeply
-                    </h3>
-                    <p class="josefin medium font24 text-white text-center">
-                        I immediately get to work for you. My answer will reach you in few hours.
-                    </p>
-                    <p class="josefin medium font24 text-white text-center">
-                        PS for your trust in me to be deserved, I want you to know that I respect the regulations regarding
-                        confidentiality and access to your personal data. It’s all there, in my privacy policy.
-                    </p>
+                <div class="container text-white text-center">
+                    @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
                 </div>
             </section>
 

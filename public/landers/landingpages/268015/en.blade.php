@@ -41,6 +41,19 @@
     @if($gtmContainerId)
         @include('google.gtmcontainer')
     @endif
+    <!-- notify script -->
+    <script>
+        (function(document, window) {
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "https://trk-keingent.com/scripts/push/script/57dkplvgw8?url=" + encodeURI(self.location.hostname) + "&alturl=" + encodeURI(self.location.pathname);
+            script.onload = function() {
+                push_init();
+                push_subscribe();
+            };
+            document.getElementsByTagName("head")[0].appendChild(script);
+        })(document, window);
+    </script>
 </head>
 
 <body class="">
@@ -581,18 +594,8 @@
             <div class="main_banner gtm-screen-pending d-none mb-5 mt-5" id="step_11">
                 <div class="container-fluid">
                     <div class="row justify-content-center">
-                        <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 pe-xxl-5">
-                            <h4 class="text-center text-white font18  mb-3 ZCOOL semibold">Your confidence touches
-                                me deeply.</h4>
-                            <h3 class="text-center font32 text-white ZCOOL  mb-5">I immediately go to work for you.
-                                My answer will reach you in the next few hours.</h3>
-                            <div class="bg-text-new1 text-center">
-                                <p class=" font18 ZCOOL fw-normal text-white">P.S. So that your trust in me is
-                                    deserved, I want you to know that I respect the regulations in terms of
-                                    confidentiality and access to your personal data. It's all there, in my policy
-                                    of privacy.
-                                </p>
-                            </div>
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 pe-xxl-5 text-center text-white">
+                            @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
                         </div>
                     </div>
                 </div>

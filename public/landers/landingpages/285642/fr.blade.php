@@ -31,6 +31,7 @@
     @if($gtmContainerId)
     @include('google.gtmcontainer')
     @endif
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="{{ asset('assets') }}/js/lander.js" type="module"></script>
     <title>Astrology Prism</title>
@@ -391,10 +392,8 @@
             <div class="container">
                 <div class="height-50"></div>
                 <div class="row justify-content-center mx-0 w-100">
-                    <div class="col-12 col-md-6 col-xxl-7">
-                        <h3 class="times fw-normal font-68 text-white text-center mb-4 pb-0">
-                            Veuillez patienter un moment, pendant que je vous connecte avec votre<br />Ange Gardien...
-                        </h3>
+                    <div class="col-12 col-md-6 col-xxl-7 text-white text-center">
+                        @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
                     </div>
                 </div>
                 <div class="h-150"></div>

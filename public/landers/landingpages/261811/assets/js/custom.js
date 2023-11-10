@@ -76,6 +76,12 @@ $(document).ready(function () {
     // step 3 show
     $(".choose_gender_btn, .step_2_next").on("click", function () {
         var test = $("input[name='gender']:checked").val();
+        let $element = $('input[name="googleClientId"]');
+            let cookieMatch = document.cookie.match(/_ga=(.+?);/);
+            if (cookieMatch) {
+                let googleClientId = cookieMatch[1].split('.').slice(-2).join(".");
+                $element.val(googleClientId);
+            }
         if (test) {
             gotoNextStep(".step_2", ".step_3");
             $(".step_2_error").addClass("d-none");

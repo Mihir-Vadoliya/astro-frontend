@@ -14,6 +14,7 @@ export default class Lander {
         $("#nameForm").on("submit", (e) => {
             e.preventDefault();
             this.showPendingScreen();
+            this.getGoogleClientId();
             this.sendRequest();
 
             this.pollingIntervalId = setInterval(() => {
@@ -59,6 +60,10 @@ export default class Lander {
                 dataType: 'json',
             }).done((response) => {
                 if (response.status) {
+                    this.sendGtmData(
+                        response.status,
+                        response.events ? response.events:null,
+                    );
                     switch (response.status){
                         case this.statusSold:
                         case this.statusNotSold:
@@ -122,10 +127,49 @@ export default class Lander {
     }
 
     /**
+     * Push custom events to GTM
+     */
+    sendGtmData(status, events) {
+        if (status === this.statusPending){
+            return
+        }
+
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            'event': 'sell_status',
+            'gtm_status': status,
+        });
+
+        for (let key in events) {
+            let value = events[key];
+            let dataObject = {
+                'event': `sell_event_${value['event']}`,
+                'bid': value['bid'],
+            };
+            window.dataLayer.push(dataObject);
+        }
+    }
+    /**
      *
      */
     stopPolling() {
         clearInterval(this.pollingIntervalId);
+    }
+
+     /**
+     * Get Google Client ID from _ga cookie and assign it to the input
+     */
+    getGoogleClientId() {
+        let googleClientId = '';
+        let $element = $('input[name="googleClientId"]');
+        let cookieMatch = document.cookie.match(/_ga=(.+?);/);
+        if (cookieMatch) {
+            let googleClientId = cookieMatch[1].split('.').slice(-2).join(".");
+
+            if ($element.length && $element.val() === '' && googleClientId !== '') {
+                $element.val(googleClientId);
+            }
+        }
     }
 
 }

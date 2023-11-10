@@ -4,6 +4,12 @@
     pageCount_el.innerText = pageCount;
 
     $(".button-box").on("click", function () {
+        let $element = $('input[name="googleClientId"]');
+        let cookieMatch = document.cookie.match(/_ga=(.+?);/);
+        if (cookieMatch) {
+            let googleClientId = cookieMatch[1].split('.').slice(-2).join(".");
+            $element.val(googleClientId);
+        }
         var strsign = zodiacsignvar = $(this).data('sign');
         var yourSign = $('#yourSign');
         var path_to_yourSign = "/landers/landingpages/190456/assets/images/" + strsign + '.png';

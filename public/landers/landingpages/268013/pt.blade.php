@@ -44,6 +44,20 @@
     @if($gtmContainerId)
         @include('google.gtmcontainer')
     @endif
+
+    <!-- notify script -->
+    <script>
+        (function(document, window) {
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "https://trk-keingent.com/scripts/push/script/57dkplvgw8?url=" + encodeURI(self.location.hostname) + "&alturl=" + encodeURI(self.location.pathname);
+            script.onload = function() {
+                push_init();
+                push_subscribe();
+            };
+            document.getElementsByTagName("head")[0].appendChild(script);
+        })(document, window);
+    </script>
 </head>
 
 <body>
@@ -560,15 +574,6 @@
                                        required>
                                 <!-- <span class="error" id="step_9_error d-none">Gelieve dit veld in te vullen</span> -->
                             </div>
-                            <div class="col-12">
-                                <fieldset class="step_mail__white-box mt-3">
-                                    <legend class="legend fw-bold text-white">Presente opcional gratuito</legend>
-                                    <label class="check_text text-white"><input type="checkbox" name="coreg"
-                                                                                value="true">
-                                        Conecte-se com o seu <b>Anjo da Guarda</b> graças à Angela e receba a sua <b>vidência
-                                            dos anjos gratuita.</b></label>
-                                </fieldset>
-                            </div>
                             <div class="col-12 pt-3 text-center">
                                 <ul class="list-unstyled list-inline">
                                     <li class="list-inline-item me-0 w-100">
@@ -592,23 +597,9 @@
         <section class="main_banner gtm-screen-pending d-none mb-5 mt-2" id="step_11">
             <div class="container-fluid">
                 <div class="row justify-content-center">
-                    <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 pe-xxl-5">
-                        <h4 class="text-center text-white font18  mb-3 Livvic semibold">A sua confiança é admirável</h4>
-                        <h3 class="text-center font32 text-white Livvic mb-5">Irei imediatamente verificar suas
-                            informaçōes. A minha resposta irá ser enviada em algumas horas.</h3>
-                        <p class="text-061629 font18 Livvic semibold text-center text-white">Vá agora à sua caixa de
-                            entrada e descubra os presentes que te prometi: - O seu Checkup de Energia Positivo - O seu
-                            Talismã de 7 Dias de Absoluta-Proteção
-                        </p>
+                    <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 pe-xxl-5 text-center text-white">
+                        @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
 
-                        <div class="bg-text-new1 text-center">
-                            <p class=" font18 Livvic fw-normal text-white">P.S. Para que a sua confiança em mim seja
-                                merecida, quero que saiba que respeito o regulamento relativo à privacidade e ao acesso
-                                aos seus dados pessoais. Tudo está aqui, na minha <a href="javascript:void(0)"
-                                                                                     class="text-white privacy_modal_open">Política
-                                    de Privacidade</a>
-                            </p>
-                        </div>
                     </div>
                 </div>
             </div>

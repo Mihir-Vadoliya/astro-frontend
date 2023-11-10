@@ -483,7 +483,7 @@
                                     <input type="email" placeholder="E-Mail" name="email" required class="gtm-email enter_city font24 medium montserrat text-center text-white">
                                 </div>
                                 <div class="col-12 col-lg-10 col-xxl-11 pt-4 text-center">
-                                    
+
                                     <button type="submit" class="gtm-email-continue all_continue_btn font-20 text-uppercase text-center w-100 text-white d-inline-block">Erhalten Sie meine komplette Hellseherei KOSTENLOS</button>
                                 </div>
                             </div>
@@ -497,10 +497,8 @@
                 <div class="container">
                     <div class="height-50"></div>
                     <div class="row justify-content-center mx-0 w-100">
-                        <div class="col-12 col-md-6 col-xxl-7">
-                            <h3 class="times fw-normal font-68 text-white text-center mb-4 pb-0">
-                                Bitte warte einen Moment, während ich dich mit deinem<br />Schutzengel verbinde...
-                            </h3>
+                        <div class="col-12 col-md-6 col-xxl-7 text-white text-center">
+                            @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
                         </div>
                     </div>
                     <div class="h-150"></div>
@@ -538,6 +536,9 @@
                     <p class="times fw-normal text-white">
                         <?= print_dynamic_variable('disclaimer_text_de') ?> <?= print_dynamic_variable('address') ?>
                     </p>
+                    <div id="hjtempie" class="text-white">
+                        1234567890
+                    </div>
                 </div>
             </div>
         </div>

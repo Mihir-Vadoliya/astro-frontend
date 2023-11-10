@@ -468,14 +468,6 @@
                                     <input type="email" placeholder="Courriel" name="email" required class="gtm-email enter_city font24 medium montserrat text-center text-white">
                                 </div>
                                 <div class="col-12 col-lg-10 col-xxl-11 pt-4 text-center">
-                                    <fieldset class="step_mail__white-box text-white font-14">
-                                        <legend class="legend fw-bold sky-color-2">Cadeau optionnel gratuit</legend>
-                                        <label class="check_text"><input type="checkbox" name="coreg" value="true">
-                                            <b>Argent – Amour – Bonheur –</b> Laissez Athena, la voyante des stars vous
-                                            transmettre le <b>pouvoir de la chance</b> et recevez votre <b>voyance
-                                                gratuite.</b></label>
-                                    </fieldset>
-                                    <br>
                                     <button type="submit" class="gtm-email-continue all_continue_btn font-20 text-uppercase text-center w-100 text-white d-inline-block">
                                         Obtenez votre voyance complète GRATUITE
                                     </button>
@@ -490,11 +482,8 @@
                 <div class="container">
                     <div class="height-50"></div>
                     <div class="row justify-content-center mx-0 w-100">
-                        <div class="col-12 col-md-6 col-xxl-7">
-                            <h3 class="times fw-normal font-68 text-white text-center mb-4 pb-0">
-                                Veuillez patienter un moment, pendant que je vous connecte avec votre<br />Ange Gardien...
-                            </h3>
-                        </div>
+                        <div class="col-12 col-md-6 col-xxl-7 text-center  text-white">
+                            @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
                     </div>
                     <div class="h-150"></div>
                 </div>

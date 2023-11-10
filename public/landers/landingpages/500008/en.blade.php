@@ -699,9 +699,8 @@
                     </div>
                     <div class="center_div center_div_2 ">
                         <!-- pendding screen -->
-                        <div class="step_11 d-none gtm-screen-pending">
-                            <h3 class="fw-bold font-18 mb-0 text-uppercase text-white text-center mb-0 heading_steps pt-xl-4">You're being redirected for a quick email confirmation to ensure we have the right address. Meanwhile, our astrologers are preparing your reading. Thanks for your patience!
-                            </h3>
+                        <div class="step_11 d-none gtm-screen-pending text-center text-white">
+                            @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
                         </div>
                     </div>
                 </form>

@@ -135,9 +135,6 @@ class BinomLanderController extends Controller
                     'pixel' => $fbPixel ?? null,
                     'binom_click_id' => $binom_click_id ?? null,
                     'campaign_id' => isset($trackingDetails['campaign']) ? $trackingDetails['campaign']['campaign_id'] : null,
-                    'set_id' => $config['set_id']?? '',
-                    'asset_path' => 'landers/landingpages/'.$designId,
-                    'srcImg' => '/landers/sets/set'.$config['set_id']?? '',
                 ]
             );
         }

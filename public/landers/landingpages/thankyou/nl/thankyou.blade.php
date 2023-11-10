@@ -58,6 +58,12 @@
     #defaultThankYouPage .d-none, #dynamicThankYouPage .d-none{
         display: none;
     }
+    #defaultThankYouPage li:before{
+        display: none;
+    }
+    #defaultThankYouPage li{
+        padding-left: 0px;
+    }
 
 </style>
 

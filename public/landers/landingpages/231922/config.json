@@ -3,7 +3,7 @@
     "offer_id": 1016,
     "lander_id": 1016,
     "tracker": "binom",
-    "countries": ["GB","AU","AE"],
+    "countries": ["GB","AU","AE","SE","DK","NO"],
     "astrologist": "Padre",
     "gtmContainerId": "GTM-W6V3PB8",
     "domains": [

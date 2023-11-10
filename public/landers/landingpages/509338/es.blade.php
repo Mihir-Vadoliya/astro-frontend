@@ -555,10 +555,8 @@
                     <div class="container">
                         <div class="height-50"></div>
                         <div class="row justify-content-center mx-0 w-100">
-                            <div class="col-12 col-md-6 col-xxl-7">
-                                <h3 class="times fw-normal font-68 text-center mb-4 pb-0 text-white">
-                                    Por favor, espera un momento, mientras te conecto con tu ángel de la guarda...
-                                </h3>
+                            <div class="col-12 col-md-6 col-xxl-7 text-center">
+                                @include('/landers/landingpages/thankyou/'.$language.'/pending-screen')
                             </div>
                         </div>
                         <div class="h-150"></div>
