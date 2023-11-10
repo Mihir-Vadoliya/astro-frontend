@@ -26,6 +26,10 @@ Route::get('/thankyou', function (){
     echo "Thank You";
 });
 
+Route::get('/thankyou', function (){
+    echo "Thank You";
+});
+
 Route::get('/checkStatus/{customerId}', [LanderController::class, 'checkStatus']);
 Route::post('/{design_id}/{country}/insertlead',[LanderController::class, 'insertLandingpageLead']);
 Route::get('/{design_id}/{country}',[BinomLanderController::class, 'landingpageView']);
