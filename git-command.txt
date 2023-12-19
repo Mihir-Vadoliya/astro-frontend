@@ -1,0 +1,40 @@
+Download git:
+https://gitforwindows.org/
+
+Commads:
+
+https://github.com/joshnh/Git-Commands
+
+git init
+	- git intitilize 
+
+git status
+	-check git status
+
+git add . / git add [file/folder-name]
+	-add to staging area (move to .git folder)
+
+git commit -m "COMMIT"
+	-commit the request
+
+git push
+	push all code to github
+
+git pull
+	pull github to local
+
+git clone [HTTPS Repo Path]
+	clone github to local
+
+GIT Branch
+
+git branch [branch-name]
+	-create branch
+
+git remote add dev1 https://github.com/Mihir-Vadoliya/astro-frontend.git
+	-add remote branch
+
+git push [remote-name] [branch-name]
+	-push local to github in new branch
+	
+	
